@@ -241,11 +241,116 @@
             }
         }
     </style>
+
+    <!-- sliding logo-->
+    <style>
+        .logo {
+            font-size: 3em;
+            padding: 0 0.3em;
+            display: block;
+            float: left;
+        }
+
+        .firstName {
+            background-color: #83caff;
+            color: #000;
+        }
+
+        .lastName {
+            background-color: transparent;
+            color: #83caff;
+        }
+
+        /* Set vendor-specific animation name and duration on .logo class */
+
+        .logo {
+            -webkit-animation-name: fadein;
+            -webkit-animation-duration: 3s;
+            -moz-animation-name: fadein;
+            -moz-animation-duration: 3s;
+            -ms-animation-name: fadein;
+            -ms-animation-duration: 3s;
+            -o-animation-name: fadein;
+            -o-animation-duration: 3s;
+            animation-name: fadein;
+            animation-duration: 3s;
+        }
+
+        /* Set vendor-specific keyframes for animation on load 
+   Position and opacity are animated */
+
+        @-webkit-keyframes fadein {
+            0% {
+                opacity: 0;
+                margin-left: -250px;
+            }
+
+            100% {
+                opacity: 1;
+                margin-left: 0;
+            }
+        }
+
+        @-moz-keyframes fadein {
+            0% {
+                opacity: 0;
+                margin-left: -250px;
+            }
+
+            100% {
+                opacity: 1;
+                margin-left: 0;
+            }
+        }
+
+        @-ms-keyframes fadein {
+            0% {
+                opacity: 0;
+                margin-left: -250px;
+            }
+
+            100% {
+                opacity: 1;
+                margin-left: 0;
+            }
+        }
+
+        @-o-keyframes fadein {
+            0% {
+                opacity: 0;
+                margin-left: -250px;
+            }
+
+            100% {
+                opacity: 1;
+                margin-left: 0;
+            }
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+                margin-left: -250px;
+            }
+
+            100% {
+                opacity: 1;
+                margin-left: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <div id="logo">
+                <span class="logo firstName">Varun</span>
+                <span class="logo lastName">Tayur</span>
+            </div>
+        </div>
+    </nav>
     <div id="main-container">
-        <div id="logo">Varun Tayur</div>
         <div id="navigation">
             <ul class="nav nav-pills" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
