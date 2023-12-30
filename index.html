@@ -772,7 +772,7 @@
             root.renderer.setPixelRatio(window.devicePixelRatio || 1);
             root.camera.position.set(0, 0, 600);
 
-            var textAnimation = createTextAnimation();
+            var textAnimation = createTextAnimation('Varun Tayur');
             root.scene.add(textAnimation);
 
             var light = new THREE.DirectionalLight();
@@ -794,8 +794,8 @@
             createTweenScrubber(tl);
         }
 
-        function createTextAnimation() {
-            var geometry = generateTextGeometry('Varun Tayur', {
+        function createTextAnimation(text) {
+            var geometry = generateTextGeometry(text, {
                 size: 40,
                 height: 12,
                 font: 'droid sans',
