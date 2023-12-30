@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Varun Tayur - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/theaterjs/latest/theater.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
+
+    <!-- About -->
+    <style>
+        section {
+            padding: 100px 0;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Roboto';
+            font-size: 17px;
+            font-weight: 400;
+            background-color: #eee;
+        }
+
+        h1 {
+            font-size: 200%;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 400;
+        }
+
+        header {
+            background: #3f51b5;
+            color: #fff;
+            padding: 150px 0;
+        }
+
+        header p {
+            font-family: 'Allura';
+            color: rgba(255, 255, 255, .2);
+            margin-bottom: 0;
+            font-size: 60px;
+            margin-top: -30px;
+        }
+
+        .timeline {
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            background: #c5cae9;
+            width: 5px;
+            height: 95%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            width: 100%;
+            margin-bottom: 70px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            float: right;
+            padding: 40px 30px 10px 30px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content .date {
+            right: auto;
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            top: 30px;
+            left: -15px;
+            border-width: 10px 15px 10px 0;
+            border-color: transparent #f5f5f5 transparent transparent;
+        }
+
+        .timeline-item::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .timeline-content {
+            position: relative;
+            width: 45%;
+            padding: 10px 30px;
+            border-radius: 4px;
+            background: #f5f5f5;
+            box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+        }
+
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            top: 30px;
+            right: -15px;
+            border-width: 10px 0 10px 15px;
+            border-color: transparent transparent transparent #f5f5f5;
+        }
+
+        .timeline-img {
+            width: 30px;
+            height: 30px;
+            background: #3f51b5;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            margin-top: 25px;
+            margin-left: -15px;
+        }
+
+        a {
+            background: #3f51b5;
+            color: #fff;
+            padding: 8px 20px;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            display: inline-block;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
+        }
+
+        a:hover,
+        a:active,
+        a:focus {
+            background: #32408f;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .timeline-card {
+            padding: 0 !important;
+        }
+
+        .timeline-card p {
+            padding: 0 20px;
+        }
+
+        .timeline-card a {
+            margin-left: 20px;
+        }
+
+        .timeline-item .timeline-img-header {
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url('https://picsum.photos/1000/800/?random') center center no-repeat;
+            background-size: cover;
+        }
+
+        .timeline-img-header {
+            height: 200px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .timeline-img-header h2 {
+            color: #fff;
+            position: absolute;
+            bottom: 5px;
+            left: 20px;
+        }
+
+        blockquote {
+            margin-top: 30px;
+            color: #757575;
+            border-left-color: #3f51b5;
+            padding: 0 20px;
+        }
+
+        .date {
+            background: #ff4081;
+            display: inline-block;
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .timeline::before {
+                left: 50px;
+            }
+
+            .timeline .timeline-img {
+                left: 50px;
+            }
+
+            .timeline .timeline-content {
+                max-width: 100%;
+                width: auto;
+                margin-left: 70px;
+            }
+
+            .timeline .timeline-item:nth-child(even) .timeline-content {
+                float: none;
+            }
+
+            .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+                content: '';
+                position: absolute;
+                border-style: solid;
+                width: 0;
+                height: 0;
+                top: 30px;
+                left: -15px;
+                border-width: 10px 15px 10px 0;
+                border-color: transparent #f5f5f5 transparent transparent;
+            }
+        }
+    </style>
+
+    <!-- About -->
+    <style>
+        .vader {
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-size: 170px;
+            font-weight: 400;
+            background-color: #eee;
+            font-size: 200%;
+            letter-spacing: 3px;
+            font-weight: 400;
+            padding-left: 50px;
+            padding-block-start: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="logo">Varun Tayur</div>
+        <div id="navigation">
+            <ul class="nav nav-pills" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane"
+                        aria-selected="false">Portfolio</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">About</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active home-tab-class" id="home-tab-pane" role="tabpanel"
+                    aria-labelledby="home-tab" tabindex="0">
+                    <div class="vader">
+                        <div id="vader"></div>
+                    </div>
+
+                    <div id="three-container"></div>
+
+                    <div id="instructions">
+                        click and drag to control the animation
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Sri Vishnu Sahasranama Stotra (Android)
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <h2>Features</h2>
+                                    <p style='text-align:justify'><span>“Sri Vishnu
+                                            Sahasranama Stotra” application is unique in many ways; it provides the
+                                            meaning
+                                            and audio for every shloka. It makes learning the most complicated shlokas
+                                            very
+                                            easy.</span></p>
+
+                                    <p style='text-align:center;page-break-after:avoid'><span><img width=184 height=327
+                                                id="Picture 2" src="vishnu-android.fld/image001.png"></span></p>
+
+                                    <p style='text-align:justify'><span>&nbsp;</span></p>
+
+                                    <p style='text-align:justify'><span>The application provides
+                                            a complete reference to all the shlokas and their meanings, it makes
+                                            learning
+                                            easy and quick by offering the shloka and its meaning side by side just like
+                                            how you make notes. Learn/Listen to the complete Sahasranama right from its
+                                            history till the Mangala shlokas.</span></p>
+                                    <ul>
+                                        <li>
+                                            Listen and learn to a particular shloka/name.
+                                        </li>
+                                        <li>
+                                            View the shlokas for your birth star.
+                                        </li>
+                                        <li>
+                                            View the shlokas of all the avataras of Vishnu
+                                        </li>
+                                    </ul>
+
+
+                                    <h2>Settings</h2>
+
+                                    <p><span>The application can display the Shlokas in
+                                            three different languages, Kannada, Sanskrit, Telugu in addition to English.
+                                            You
+                                            can also configure the number of times to repeat the shlokas automatically,
+                                            this can be very useful while you are learning how to pronounce them. The
+                                            “Detailed
+                                            Description” option allows you to turn off the meanings and explanation for
+                                            the
+                                            Shlokas. </span></p>
+
+                                    <p style='text-align:center;page-break-after:avoid'><span><img width=235 height=398
+                                                id="Picture 3" src="vishnu-android.fld/image002.png"></span></p>
+
+                                    <p style='text-align:center'><span>Settings
+                                        </span><span>1</span></p>
+
+                                    <p><span>By turning off &quot;Shloka meanings&quot;,
+                                            you can view only the shlokas in this mode. In this mode the playback is
+                                            automatic, it will auto scroll to the currently playing Shloka.</span></p>
+
+                                    <p><span><a href="https://varuntayur.github.io/">Back
+                                                to home</a></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Sri Vishnu Sahasranama Stotra (iOS)
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <h2>Features</h2>
+                                    <p style='text-align:justify'><span>“Sri Vishnu
+                                            Sahasranama Stotra” application is unique in many ways; it provides the
+                                            meaning
+                                            and audio for every shloka. It makes learning the most complicated shlokas
+                                            very
+                                            easy.</span></p>
+
+                                    <p style='text-align:center;page-break-after:avoid'><span><img width=184 height=327
+                                                id="Picture 2" src="vishnu-ios.fld/image001.jpg"></span></p>
+
+                                    <p style='text-align:justify'><span>The application provides
+                                            a complete reference to all the shlokas and their meanings, it makes
+                                            learning
+                                            easy and quick by offering the shloka and its meaning side by side just like
+                                            how you make notes. Learn/Listen to the complete Sahasranama right from its
+                                            history till the Mangala shlokas.</span></p>
+                                    <ul>
+                                        <li>
+                                            Listen and learn to a particular shloka/name.
+                                        </li>
+                                        <li>
+                                            View the shlokas for your birth star.
+                                        </li>
+                                        <li>
+                                            View the shlokas of all the avataras of Vishnu
+                                        </li>
+                                    </ul>
+
+
+                                    <h2>Settings</h2>
+
+                                    <p><span>The application can display the Shlokas in
+                                            three different languages, Kannada, Sanskrit in addition to English. You
+                                            can also configure the number of times to repeat the shlokas automatically,
+                                            this can be very useful while you are learning how to pronounce them. The
+                                            “Detailed
+                                            Description” option allows you to turn off the meanings and explanation for
+                                            the
+                                            Shlokas. </span></p>
+
+                                    <p style='text-align:center;page-break-after:avoid'><span><img width=235 height=398
+                                                id="Picture 3" src="vishnu-ios.fld/image002.jpg"></span></p>
+
+                                    <p style='text-align:center'><span>Settings
+                                        </span><span>1</span></p>
+
+                                    <p><span>By turning off &quot;Shloka meanings&quot;,
+                                            you can view only the shlokas in this mode. In this mode the playback is
+                                            automatic, it will auto scroll to the currently playing Shloka.</span></p>
+
+                                    <p><span><a href="https://varuntayur.github.io/">Back
+                                                to home</a></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the
+                                    collapse plugin adds the appropriate classes that we use to style each element.
+                                    These
+                                    classes control the overall appearance, as well as the showing and hiding via CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables.
+                                    It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
+
+
+                    <header>
+                        <div class="container text-center">
+                            <h1>Varun Tayur</h1>
+                        </div>
+                    </header>
+
+                    <section class="timeline">
+                        <div class="container">
+                            <div class="timeline-item">
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInLeft">
+                                    <h2>Title</h2>
+                                    <div class="date">1 MAY 2016</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+                                        omnis alias
+                                        cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor,
+                                        nostrum
+                                        excepturi amet in dolores. Alias, ullam.</p>
+                                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content timeline-card js--fadeInRight">
+                                    <div class="timeline-img-header">
+                                        <h2>Card Title</h2>
+                                    </div>
+                                    <div class="date">25 MAY 2016</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+                                        omnis alias
+                                        cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor,
+                                        nostrum
+                                        excepturi amet in dolores. Alias, ullam.</p>
+                                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                                </div>
+
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInLeft">
+                                    <div class="date">3 JUN 2016</div>
+                                    <h2>Quote</h2>
+                                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                                        explicabo
+                                        debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInRight">
+                                    <h2>Title</h2>
+                                    <div class="date">22 JUN 2016</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+                                        omnis alias
+                                        cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor,
+                                        nostrum
+                                        excepturi amet in dolores. Alias, ullam.</p>
+                                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content timeline-card js--fadeInLeft">
+                                    <div class="timeline-img-header">
+                                        <h2>Card Title</h2>
+                                    </div>
+                                    <div class="date">10 JULY 2016</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+                                        omnis alias
+                                        cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor,
+                                        nostrum
+                                        excepturi amet in dolores. Alias, ullam.</p>
+                                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content timeline-card js--fadeInRight">
+                                    <div class="timeline-img-header">
+                                        <h2>Card Title</h2>
+                                    </div>
+                                    <div class="date">30 JULY 2016</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+                                        omnis alias
+                                        cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor,
+                                        nostrum
+                                        excepturi amet in dolores. Alias, ullam.</p>
+                                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInLeft">
+                                    <div class="date">5 AUG 2016</div>
+                                    <h2>Quote</h2>
+                                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                                        explicabo
+                                        debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content timeline-card js--fadeInRight">
+                                    <div class="timeline-img-header">
+                                        <h2>Card Title</h2>
+                                    </div>
+                                    <div class="date">19 AUG 2016</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+                                        omnis alias
+                                        cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor,
+                                        nostrum
+                                        excepturi amet in dolores. Alias, ullam.</p>
+                                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInLeft">
+                                    <div class="date">1 SEP 2016</div>
+                                    <h2>Title</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione
+                                        omnis alias
+                                        cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor,
+                                        nostrum
+                                        excepturi amet in dolores. Alias, ullam.</p>
+                                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function Typer(element, options, scenes) {
+            // we define some default options to
+            // limit the need of adding extra configuration
+            var defaultOptions = {
+                erase: 60,
+                type: 80,
+                break: 1000
+            };
+
+            // "config" is actually going
+            // to hold the options after they got merged
+            var config = {};
+
+            // if options is an array, it means it's
+            // a list of scene and we didn't specify
+            // any options so in this case we're just
+            // swapping the arguments and setting an empty
+            // object for "options"
+            // this is great as it allows you to skip
+            // the options object if you're already ok
+            // with the defaults
+            if (Array.isArray(options)) {
+                scenes = options;
+                options = {};
+            }
+
+            // here we loop over the defaultOptions properties
+            for (var key in defaultOptions) {
+                // that check ensures we're not looping over
+                // prototype properties, it's something that's
+                // related to how the for loop works but has nothing
+                // to do with this particular implementation ;)
+                if (!defaultOptions.hasOwnProperty(key)) continue;
+
+                if (options[key] != null) {
+                    // if there's an option provided for the
+                    // given key, take it
+                    config[key] = options[key];
+                } else {
+                    // but otherwise, take it from the defaults
+                    config[key] = defaultOptions[key];
+                }
+            }
+
+            // this status is what tells us
+            // whether the animation should be playing or not
+            var status = 'ready';
+
+            // state holds the currently typed value
+            // it's safer to rely on that internal state
+            // instead of the element's textContent as
+            // it could be changed by something else
+            // while this state variable cannot be changed
+            var state = '';
+
+            // currentSceneIndex store the index of
+            // the current playing scene
+            var currentSceneIndex = 0
+
+            function type() {
+                if (status !== 'playing') {
+                    // if the animation is not playing
+                    // we don't want to do anything so just return
+                    return;
+                }
+
+                // let's get the current scene's value
+                var scene = scenes[currentSceneIndex];
+
+                // is the state the same as the scene?
+                // if so, it means we're done typing
+                if (state === scene) {
+                    // so make a break and then erase the content
+                    return setTimeout(erase, config.break);
+                }
+
+                // if we made it until there,
+                // it means we still have some text to type
+                // we want to type the next character
+                // to do so we could get the current length
+                // and get the relevant character, e.g:
+                // scene.charAt(state.length + 1)
+                // but once again, the text content of the
+                // element could have been changed by
+                // something else so instead we're taking
+                // the scene's content from the start until
+                // the next character
+                state = scene.substr(0, state.length + 1);
+                element.textContent = state;
+
+                // after some delay, we're calling the same function
+                // (the one we are currently in)
+                // this way we'll type the next character if allowed/needed
+                // or just call the erase function
+                setTimeout(type, config.type);
+            }
+
+            function erase() {
+                if (status !== 'playing') {
+                    // same as type(), if the animation is not
+                    // playing, there's nothing to do and we can just return
+                    return;
+                }
+
+                if (state === '') {
+                    // if the state is empty, it means
+                    // we have erased everything and we
+                    // want to play the next scene
+                    // which is basically the currentScene + 1
+                    currentSceneIndex++;
+
+                    // but the current scene could have been the last
+                    // if so, we want to loop over the scenario
+                    // and replay it from scratch, setting the current scene to 0
+                    if (currentSceneIndex === scenes.length) {
+                        currentSceneIndex = 0;
+                    }
+
+                    // now that we have updated the current scene
+                    // just ask to type() to type it
+                    return type();
+                }
+
+                // ok so if we're there, it means there are
+                // still some characters to erase
+                state = state.substr(0, state.length - 1);
+                element.textContent = state;
+
+                // after some delay, erase the next character
+                setTimeout(erase, config.erase);
+            }
+
+            function stop() {
+                // as you've seen through erase and type
+                // the animation is stopped if the status
+                // is not "playing" so setting it to "ready"
+                // has the effect of stopping the animation
+                status = 'ready';
+            }
+
+            function play() {
+                if (status === 'ready') {
+                    // playing a scenario that is already
+                    // playing is a non-sense so that's
+                    // why we're ensuring that it's ready
+                    // before playing it
+                    status = 'playing';
+                    type();
+                }
+            }
+
+            // to avoid having to call the play
+            // the first time, let's just do it there
+            play();
+
+            // we're returning some functions that could be
+            // useful to users :)
+            return {
+                play: play,
+                stop: stop
+            };
+        }
+
+        var vader = document.getElementById('vader');
+        var player = Typer(vader, ['Hello there!', 'How are you doing?', 'Let me tell you a joke!',
+            'Programmer 1: Did you hear about the new programmer restaurant?',
+            'Programmer 2: No, what\'s it called?',
+            'Programmer 1: "Null Pointer Pub."',
+            'Programmer 2: Why that name?',
+            'Programmer 1: Their daily specials always come with unexpected exceptions. Like the "Segmentation Fault Sushi" and "Array Out of Bounds Avocado.',
+            'Programmer 2: Haha, classic! Do they have desserts?',
+            'Programmer 1: Yeah, the "Infinite Loop Ice Cream." And if your code passes tests on the first try, you get a free drink – the "Zero Bug Bounty.',
+            'Programmer 2: Nice! Let\'s hope their servers are as reliable as their jokes.']);
+
+        // to specify some options, you could do:
+        // var player = Typer(vader, { erase: 40, type: 60, break: 4000 }, ['Hello there!', 'How u doing?']);
+
+        // now, run the fiddle and you'll see that it gets stopped
+        // after 600ms and is resumed after 2 seconds
+        setTimeout(player.stop, 600)
+        setTimeout(player.play, 2000)
+    </script>
+
+    <script>
+        // About page 
+        function aboutPage() {
+
+            window.sr = ScrollReveal();
+
+            if ($(window).width() < 768) {
+
+                if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+                    $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+                }
+
+                sr.reveal('.js--fadeInRight', {
+                    origin: 'right',
+                    distance: '300px',
+                    easing: 'ease-in-out',
+                    duration: 800,
+                });
+
+            } else {
+
+                sr.reveal('.js--fadeInLeft', {
+                    origin: 'left',
+                    distance: '300px',
+                    easing: 'ease-in-out',
+                    duration: 800,
+                });
+
+                sr.reveal('.js--fadeInRight', {
+                    origin: 'right',
+                    distance: '300px',
+                    easing: 'ease-in-out',
+                    duration: 800,
+                });
+
+            }
+
+            sr.reveal('.js--fadeInLeft', {
+                origin: 'left',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+
+
+        };
+
+        aboutPage();
+    </script>
+
+    <script>
+        THREE.ShapeUtils.triangulateShape = (function () {
+            var pnlTriangulator = new PNLTRI.Triangulator();
+            return function triangulateShape(contour, holes) {
+                return pnlTriangulator.triangulate_polygon([contour].concat(holes));
+            };
+        })();
+
+        window.onload = init;
+
+        function init() {
+            var root = new THREERoot({
+                createCameraControls: !true,
+                antialias: (window.devicePixelRatio === 1),
+                fov: 60
+            });
+
+            root.renderer.setClearColor(0x000000);
+            root.renderer.setPixelRatio(window.devicePixelRatio || 1);
+            root.camera.position.set(0, 0, 600);
+
+            var textAnimation = createTextAnimation();
+            root.scene.add(textAnimation);
+
+            var light = new THREE.DirectionalLight();
+            light.position.set(0, 0, 1);
+            root.scene.add(light);
+
+            var tl = new TimelineMax({
+                repeat: -1,
+                repeatDelay: 0.5,
+                yoyo: true
+            });
+            tl.fromTo(textAnimation, 4,
+                { animationProgress: 0.0 },
+                { animationProgress: 0.6, ease: Power1.easeInOut },
+                0
+            );
+            tl.fromTo(textAnimation.rotation, 4, { y: 0 }, { y: Math.PI * 2, ease: Power1.easeInOut }, 0);
+
+            createTweenScrubber(tl);
+        }
+
+        function createTextAnimation() {
+            var geometry = generateTextGeometry('Varun Tayur', {
+                size: 40,
+                height: 12,
+                font: 'droid sans',
+                weight: 'bold',
+                style: 'normal',
+                curveSegments: 24,
+                bevelSize: 2,
+                bevelThickness: 2,
+                bevelEnabled: true,
+                anchor: { x: 0.5, y: 0.5, z: 0.0 }
+            });
+
+            THREE.BAS.Utils.tessellateRepeat(geometry, 1.0, 2);
+
+            THREE.BAS.Utils.separateFaces(geometry);
+
+            return new TextAnimation(geometry);
+        }
+
+        function generateTextGeometry(text, params) {
+            var geometry = new THREE.TextGeometry(text, params);
+
+            geometry.computeBoundingBox();
+
+            var size = geometry.boundingBox.size();
+            var anchorX = size.x * -params.anchor.x;
+            var anchorY = size.y * -params.anchor.y;
+            var anchorZ = size.z * -params.anchor.z;
+            var matrix = new THREE.Matrix4().makeTranslation(anchorX, anchorY, anchorZ);
+
+            geometry.applyMatrix(matrix);
+
+            return geometry;
+        }
+
+        ////////////////////
+        // CLASSES
+        ////////////////////
+
+        function TextAnimation(textGeometry) {
+            var bufferGeometry = new THREE.BAS.ModelBufferGeometry(textGeometry);
+
+            var aAnimation = bufferGeometry.createAttribute('aAnimation', 2);
+            var aEndPosition = bufferGeometry.createAttribute('aEndPosition', 3);
+            var aAxisAngle = bufferGeometry.createAttribute('aAxisAngle', 4);
+
+            var faceCount = bufferGeometry.faceCount;
+            var i, i2, i3, i4, v;
+
+            var maxDelay = 0.0;
+            var minDuration = 1.0;
+            var maxDuration = 1.0;
+            var stretch = 0.05;
+            var lengthFactor = 0.001;
+            var maxLength = textGeometry.boundingBox.max.length();
+
+            this.animationDuration = maxDuration + maxDelay + stretch + lengthFactor * maxLength;
+            this._animationProgress = 0;
+
+            var axis = new THREE.Vector3();
+            var angle;
+
+            for (i = 0, i2 = 0, i3 = 0, i4 = 0; i < faceCount; i++, i2 += 6, i3 += 9, i4 += 12) {
+                var face = textGeometry.faces[i];
+                var centroid = THREE.BAS.Utils.computeCentroid(textGeometry, face);
+                var centroidN = new THREE.Vector3().copy(centroid).normalize();
+
+                // animation
+                var delay = (maxLength - centroid.length()) * lengthFactor;
+                var duration = THREE.Math.randFloat(minDuration, maxDuration);
+
+                for (v = 0; v < 6; v += 2) {
+                    aAnimation.array[i2 + v] = delay + stretch * Math.random();
+                    aAnimation.array[i2 + v + 1] = duration;
+                }
+
+                // end position
+                var point = utils.fibSpherePoint(i, faceCount, 200);
+
+                for (v = 0; v < 9; v += 3) {
+                    aEndPosition.array[i3 + v] = point.x;
+                    aEndPosition.array[i3 + v + 1] = point.y;
+                    aEndPosition.array[i3 + v + 2] = point.z;
+                }
+
+                // axis angle
+                axis.x = centroidN.x;
+                axis.y = -centroidN.y;
+                axis.z = -centroidN.z;
+
+                axis.normalize();
+
+                angle = Math.PI * THREE.Math.randFloat(0.5, 2.0);
+
+                for (v = 0; v < 12; v += 4) {
+                    aAxisAngle.array[i4 + v] = axis.x;
+                    aAxisAngle.array[i4 + v + 1] = axis.y;
+                    aAxisAngle.array[i4 + v + 2] = axis.z;
+                    aAxisAngle.array[i4 + v + 3] = angle;
+                }
+            }
+
+            var material = new THREE.BAS.PhongAnimationMaterial({
+                shading: THREE.FlatShading,
+                side: THREE.DoubleSide,
+                transparent: true,
+                uniforms: {
+                    uTime: { type: 'f', value: 0 }
+                },
+                shaderFunctions: [
+                    THREE.BAS.ShaderChunk['cubic_bezier'],
+                    THREE.BAS.ShaderChunk['ease_out_cubic'],
+                    THREE.BAS.ShaderChunk['quaternion_rotation']
+                ],
+                shaderParameters: [
+                    'uniform float uTime;',
+                    'uniform vec3 uAxis;',
+                    'uniform float uAngle;',
+                    'attribute vec2 aAnimation;',
+                    'attribute vec3 aEndPosition;',
+                    'attribute vec4 aAxisAngle;'
+                ],
+                shaderVertexInit: [
+                    'float tDelay = aAnimation.x;',
+                    'float tDuration = aAnimation.y;',
+                    'float tTime = clamp(uTime - tDelay, 0.0, tDuration);',
+                    'float tProgress = ease(tTime, 0.0, 1.0, tDuration);'
+                    // 'float tProgress = tTime / tDuration;'
+                ],
+                shaderTransformPosition: [
+                    'transformed = mix(transformed, aEndPosition, tProgress);',
+
+                    'float angle = aAxisAngle.w * tProgress;',
+                    'vec4 tQuat = quatFromAxisAngle(aAxisAngle.xyz, angle);',
+                    'transformed = rotateVector(tQuat, transformed);',
+                ]
+            },
+                {
+                    diffuse: 0x444444,
+                    specular: 0xcccccc,
+                    shininess: 4
+                    //emissive:0xffffff
+                }
+            );
+
+            THREE.Mesh.call(this, bufferGeometry, material);
+
+            this.frustumCulled = false;
+        }
+        TextAnimation.prototype = Object.create(THREE.Mesh.prototype);
+        TextAnimation.prototype.constructor = TextAnimation;
+
+        Object.defineProperty(TextAnimation.prototype, 'animationProgress', {
+            get: function () {
+                return this._animationProgress;
+            },
+            set: function (v) {
+                this._animationProgress = v;
+                this.material.uniforms['uTime'].value = this.animationDuration * v;
+            }
+        });
+
+        function THREERoot(params) {
+            params = utils.extend({
+                fov: 60,
+                zNear: 10,
+                zFar: 100000,
+
+                createCameraControls: true
+            }, params);
+
+            this.renderer = new THREE.WebGLRenderer({
+                antialias: params.antialias
+            });
+            this.renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
+            document.getElementById('three-container').appendChild(this.renderer.domElement);
+
+            this.camera = new THREE.PerspectiveCamera(
+                params.fov,
+                window.innerWidth / window.innerHeight,
+                params.zNear,
+                params.zfar
+            );
+
+            this.scene = new THREE.Scene();
+
+            if (params.createCameraControls) {
+                this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+            }
+
+            this.resize = this.resize.bind(this);
+            this.tick = this.tick.bind(this);
+
+            this.resize();
+            this.tick();
+
+            window.addEventListener('resize', this.resize, false);
+        }
+        THREERoot.prototype = {
+            tick: function () {
+                this.update();
+                this.render();
+                requestAnimationFrame(this.tick);
+            },
+            update: function () {
+                this.controls && this.controls.update();
+            },
+            render: function () {
+                this.renderer.render(this.scene, this.camera);
+            },
+            resize: function () {
+                this.camera.aspect = window.innerWidth / window.innerHeight;
+                this.camera.updateProjectionMatrix();
+
+                this.renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+        };
+
+        ////////////////////
+        // UTILS
+        ////////////////////
+
+        var utils = {
+            extend: function (dst, src) {
+                for (var key in src) {
+                    dst[key] = src[key];
+                }
+
+                return dst;
+            },
+            randSign: function () {
+                return Math.random() > 0.5 ? 1 : -1;
+            },
+            ease: function (ease, t, b, c, d) {
+                return b + ease.getRatio(t / d) * c;
+            },
+            // mapEase:function(ease, v, x1, y1, x2, y2) {
+            //   var t = v;
+            //   var b = x2;
+            //   var c = y2 - x2;
+            //   var d = y1 - x1;
+            //
+            //   return utils.ease(ease, t, b, c, d);
+            // },
+            fibSpherePoint: (function () {
+                var v = { x: 0, y: 0, z: 0 };
+                var G = Math.PI * (3 - Math.sqrt(5));
+
+                return function (i, n, radius) {
+                    var step = 2.0 / n;
+                    var r, phi;
+
+                    v.y = i * step - 1 + (step * 0.5);
+                    r = Math.sqrt(1 - v.y * v.y);
+                    phi = i * G;
+                    v.x = Math.cos(phi) * r;
+                    v.z = Math.sin(phi) * r;
+
+                    radius = radius || 1;
+
+                    v.x *= radius;
+                    v.y *= radius;
+                    v.z *= radius;
+
+                    return v;
+                }
+            })()
+        };
+
+        function createTweenScrubber(tween, seekSpeed) {
+            seekSpeed = seekSpeed || 0.001;
+
+            function stop() {
+                TweenMax.to(tween, 1, { timeScale: 0 });
+            }
+
+            function resume() {
+                TweenMax.to(tween, 1, { timeScale: 1 });
+            }
+
+            function seek(dx) {
+                var progress = tween.progress();
+                var p = THREE.Math.clamp((progress + (dx * seekSpeed)), 0, 1);
+
+                tween.progress(p);
+            }
+
+            var _cx = 0;
+
+            // desktop
+            var mouseDown = false;
+            document.body.style.cursor = 'pointer';
+
+            window.addEventListener('mousedown', function (e) {
+                mouseDown = true;
+                document.body.style.cursor = 'ew-resize';
+                _cx = e.clientX;
+                stop();
+            });
+            window.addEventListener('mouseup', function (e) {
+                mouseDown = false;
+                document.body.style.cursor = 'pointer';
+                resume();
+            });
+            window.addEventListener('mousemove', function (e) {
+                if (mouseDown === true) {
+                    var cx = e.clientX;
+                    var dx = cx - _cx;
+                    _cx = cx;
+
+                    seek(dx);
+                }
+            });
+            // mobile
+            window.addEventListener('touchstart', function (e) {
+                _cx = e.touches[0].clientX;
+                stop();
+                e.preventDefault();
+            });
+            window.addEventListener('touchend', function (e) {
+                resume();
+                e.preventDefault();
+            });
+            window.addEventListener('touchmove', function (e) {
+                var cx = e.touches[0].clientX;
+                var dx = cx - _cx;
+                _cx = cx;
+
+                seek(dx);
+                e.preventDefault();
+            });
+        }
+    </script>
+</body>
+
+</html>
