@@ -1,30 +1,62 @@
 [
-    {
-        "englishExplanation": "Let good things occur to the king of the country, Who looks after his people well, in the path of justice, Let Cows and Brahmins have a pleasant life daily, Let all people of the world have a very pleasant life.\n",
-        "englishShloka": "Swasthi prajabhya paripalayantham, Nyayena margena maheem maheesa |\n Gobrahmanebhyo shubhamasthu nithyam, Loka samastha Sukhino bhavantu ||",
-        "kannadaShloka": "॥ ॐ ॥\n ಸ್ವಸ್ತಿ ಪ್ರಜಭ್ಯಾ ಪ್ಯಾರಿಪಲಾಯಂತ್ಹ್ಯಾಮ್, ನೈಯೆನಾ ಮಾರ್ಗೆನಾ ಮಹೀಮ್ ಮಾಹೀಸಾ |\n ಗೊಬ್ರಾಹ್ಮನೆಬಿಯೊ ಶುಬ್ಹಾಮಾಸ್ತು ನಿಥ್ಯಾಮ್, ಲೋಕಾ ಸಮಸ್ತಾ ಸುಖಿನೊ ಭವಾಂಟು ||\n ",
-        "sanskritShloka": "॥ ॐ ॥\n स्वस्ति प्राजाभ्य: परिपालयन्ताम् न्याय्येन मार्गेण महीम् महीशा:।\n गोब्राह्मणेभ्य: शुभमस्तु नित्यम् लोका: समस्ता: सुखिनो भवन्तु॥१॥\n ",
-        "title": "Mangala"
-    },
-    {
-        "englishExplanation": "Let the monsoon be timely and plentiful,Let earth be covered with vegetation, Let the country live without problems, And let good people never have fear.\n",
-        "englishShloka": "Kale varshathu parjanya, Pruthwee sasya shalini |\n Deso yam kshobha rahitha, SAjjana santhu nirbhaya ||",
-        "kannadaShloka": "ಕಾಲೆ ವಾರ್ಷಾತು ಪಾರ್ಜನ್ಯಾ, ಪ್ರುತ್ವೀ ಸಸ್ಯ ಶಲಿನಿ |\n ಡೆಸೊ ಯಮ್ ಖೋಭಾ ರಹಿತಾ, ಸಾಜಾನಾ ಸಾಂತು ನಿರ್ಭಯಾ ||\n ",
-        "sanskritShloka": "काले वर्षतु पर्जन्य: पृथिवी सस्यशालिनी।",
-        "title": "Mangala"
-    },
-    {
-        "englishExplanation": "Let sonless people have son, Let people with son have grand sons, And let people who are poor or rich, Live and see one hundred autumns.\n",
-        "englishShloka": "Aputhra puthrina santhu, Puthrina santhu pouthrina |\n Adhana sadhana, Santhu jeevanthu sarada satham || 3 ||",
-        "kannadaShloka": "ಅಪುತ್ರ ಪುಥ್ರಿನಾ ಸಂತು, ಪುತ್ರಿನಾ ಸಂತು ಪೌತ್ರಿನಾ |\n ಅಧನಾ: ಸಧನಾಃ ಸ೦ತು ಜೀವ೦ತು ಶಾರದ: ಶತಮ್\n ",
-        "sanskritShloka": "अपुत्र पुत्रिन सन्तु पुत्रिन सन्तु पौत्रिण:।\n अधना: सधना: सन्तु जीवन्तु शारद: शतम्॥३॥\n ",
-        "title": "Mangala"
-    },
-    {
-        "englishExplanation": "Om, May All become Happy, May All be Free from Illness. May All See what is Auspicious, May no one Suffer. Om Peace, Peace, Peace.\n",
-        "englishShloka": "Sarve bhavantu sukhinaha, Sarve santhu niramayaaha |\n Sarve bhadrani pasyanthu, Ma kaschid dukha bhag bhaveth || 4 ||",
-        "kannadaShloka": "ಸರ್ವೇ ಭವಂತು ಸುಖಿನ:, ಸರ್ವೇ ಸಂತು ನಿರಾಮಯಾ: |\n ಸರ್ವೇ ಭದ್ರಾಣಿ ಪಶ್ಯನ್ತು ಮಾ ಕಶ್ಚಿದ್ ದುಖ: ಭಾಗ್ ಭವೇತ್ || ೪ ||\n || ಓಮ್ || ಇತಿ ಶ್ರೀ ವಿಷ್ಣು ಸಹಸ್ರ ನಾಮಾ ಸ್ತೊತ್ರ೦ ಸಂರ್ಪೂಣ೦ ||\n ",
-        "sanskritShloka": "सर्वे भवन्तु सुखिन: सर्वे सन्तु निरामया:।\n सर्वे भद्राणि पश्यन्तु मा कश्चिद् दु:खभाग्भवेत्॥४॥\n ॥ॐ॥ इति श्री विष्णु सहस्रनाम स्तोत्रम् सम्पूर्णम्॥\n ",
-        "title": "Mangala"
-    }
+  {
+    "englishExplanation": [
+      "Let good things occur to the king of the country, who looks after his people well, in the path of justice. Let cows and Brahmins have a pleasant life daily. Let all people of the world have a very pleasant life."
+    ],
+    "englishShloka": "Swasthi prajabhya paripalayantham, Nyayena margena maheem maheesa |\n Gobrahmanebhyo shubhamasthu nithyam, Loka samastha Sukhino bhavantu ||",
+    "kannadaShloka": "॥ ॐ ॥\n ಸ್ವಸ್ತಿ ಪ್ರಜಭ್ಯಾ ಪ್ಯಾರಿಪಲಾಯಂತ್ಹ್ಯಾಮ್, ನೈಯೆನಾ ಮಾರ್ಗೆನಾ ಮಹೀಮ್ ಮಾಹೀಸಾ |\n ಗೊಬ್ರಾಹ್ಮನೆಬಿಯೊ ಶುಬ್ಹಾಮಾಸ್ತು ನಿಥ್ಯಾಮ್, ಲೋಕಾ ಸಮಸ್ತಾ ಸುಖಿನೊ ಭವಾಂಟು ||\n ",
+    "sanskritShloka": "॥ ॐ ॥\n स्वस्ति प्राजाभ्य: परिपालयन्ताम् न्याय्येन मार्गेण महीम् महीशा:।\n गोब्राह्मणेभ्य: शुभमस्तु नित्यम् लोका: समस्ता: सुखिनो भवन्तु॥१॥\n ",
+    "title": "Mangala",
+    "teluguShloka": "॥ ఓం ॥\n స్వస్తి ప్రజాభయం: పరిపాలయంతం న్యాయయేన మార్గేన మహిమ్ మహిష:.\n గోబ్రహ్మణేబ్య: శుభమస్తు నిత్య లోకం: సమస్త: సుఖినో భవంతు || 1\n ",
+    "tamilShloka": "॥ ஓம் ॥\n ஸ்வஸ்தி ப்ரஜப்ய: பரிபாளையந்தம் ந்யாயேன மர்கேன மஹிம் மஹிஷா:.\n கோப்ரஹ்மதேப்யா: ஸுபமஸ்து நித்யம் லோக: ஸமஸ்த: ஸுகினோ பவந்து || 1\n ",
+    "malayalamShloka": "॥ ഓം ॥\n സ്വാസ്തി പ്രജാഭ്യ: പരിപാലയന്തം ന്യായയേന മാർഗെനാ മഹിഷാ:.\n ഗോബ്രഹ്മനേബ്യ: ശുഭമസ്തു നിത്യലോകം: സമസ്ത: സുഖിനോ ഭവന്തു || 1\n ",
+    "oriyaShloka": "॥ Om ॥\n ସ୍ୱସ୍ତି ପ୍ରଜାଭ୍ୟ: ପରିପାଳୟନ୍ତମ୍ ନ୍ୟାୟୟେନା ମାର୍ଗନା ମାହିମ ମହିଷା:.\n ଗୋବ୍ରହ୍ମଣେବିୟା: ଶୁଭମସ୍ତୁ ନିତ୍ୟାମ ଲୋକ: ସମସ୍ତା: ସୁଖିନୋ ଭବାଣ୍ଟୁ || 1\n ",
+    "gujarathiShloka": "॥ ઓમ ॥\n સ્વાતિ પ્રાજભ્ય : પરિપાલયંતમ ન્યાયાયેના માર્ગેના માહિમ મહિષા :.\n ગોબ્રહ્મનેબ્ધ્યા: શુભમાસ્તુ નિત્યમ લોક: સમસ્તા: સુખિનો ભવન્તુ || 1\n ",
+    "bengaliShloka": "॥ Om ॥\n স্বস্তি প্রজাভ্যঃ পরিপালয়নং ন্যায়্যায়েন মার্গেনা মহিম মহিশা:.\n গোব্রহ্মণভ্য: শুভমস্তু নিত্যম লোক: সমস্তা: সুখিনো ভাবন্তু || 1\n "
+  },
+  {
+    "englishExplanation": [
+      "Let the monsoon be timely and plentiful. Let the earth be covered with vegetation. Let the country live without problems, and let good people never have fear."
+    ],
+    "englishShloka": "Kale varshathu parjanya, Pruthwee sasya shalini |\n Deso yam kshobha rahitha, SAjjana santhu nirbhaya ||",
+    "kannadaShloka": "ಕಾಲೆ ವಾರ್ಷಾತು ಪಾರ್ಜನ್ಯಾ, ಪ್ರುತ್ವೀ ಸಸ್ಯ ಶಲಿನಿ |\n ಡೆಸೊ ಯಮ್ ಖೋಭಾ ರಹಿತಾ, ಸಾಜಾನಾ ಸಾಂತು ನಿರ್ಭಯಾ ||\n ",
+    "sanskritShloka": "काले वर्षतु पर्जन्य: पृथिवी सस्यशालिनी।",
+    "title": "Mangala",
+    "teluguShloka": "నల్ల వర్షు పర్జన్య: పృథ్వీ సస్యశాలిని.",
+    "tamilShloka": "கருப்பு வர்ஷ்ட பர்ஜன்யம்: பிரிதிவி சஸ்யஸாலினி.",
+    "malayalamShloka": "കറുത്ത വര് ഷപു പര് ജന്യ: പൃഥ്വിരാജ് ശശിശാലിനി.",
+    "oriyaShloka": "କଳା ବର୍ଷୁ ପରଜନ୍ୟ: ପୃଥ୍ବୀ ଶାସ୍ତ୍ରଶାଳିନୀ।",
+    "gujarathiShloka": "કાળો વર્ષ્તુ પર્જન્ય : પૃથ્વીરાજ સસાયશાલિની.",
+    "bengaliShloka": "ব্ল্যাক ভার্শতু পরজন: পৃথ্বী শস্যশালিনী।"
+  },
+  {
+    "englishExplanation": [
+      "Let sonless people have sons. Let people with sons have grandsons. And let people who are poor or rich live and see one hundred autumns."
+    ],
+    "englishShloka": "Aputhra puthrina santhu, Puthrina santhu pouthrina |\n Adhana sadhana, Santhu jeevanthu sarada satham || 3 ||",
+    "kannadaShloka": "ಅಪುತ್ರ ಪುಥ್ರಿನಾ ಸಂತು, ಪುತ್ರಿನಾ ಸಂತು ಪೌತ್ರಿನಾ |\n ಅಧನಾ: ಸಧನಾಃ ಸ೦ತು ಜೀವ೦ತು ಶಾರದ: ಶತಮ್\n ",
+    "sanskritShloka": "अपुत्र पुत्रिन सन्तु पुत्रिन सन्तु पौत्रिण:।\n अधना: सधना: सन्तु जीवन्तु शारद: शतम्॥३॥\n ",
+    "title": "Mangala",
+    "teluguShloka": "పుత్ర పుత్ర సంతు పుత్రిన్ సంతు పుత్రిన్:.\n సాధన: సంతు జీవన్తు శారద: శతం || 3\n ",
+    "tamilShloka": "அபுத்ரா புத்ரின் சாந்து புத்ரின் சந்து புத்ரின்:.\n அத்னா: சாதனா: சந்து ஜீவந்து சாரதா: ஷதம் || 3\n ",
+    "malayalamShloka": "അപുത്രൻ സാന്തു പുത്രൻ:.\n അദ്ന: സാധന: സന്തു ജീവന്റെ ശാരദ: ശതം || 3\n ",
+    "oriyaShloka": "ଅପୁତ୍ର ପୁତ୍ରସନ୍ତୁ ପୁଟ୍ରିନ୍ ସାଣ୍ଟୁ ପୁଟ୍ରିନ୍ ସାଣ୍ଟୁ ପୁତ୍ରନ:.\n ଅଧନା: ସାଧନା: ସନ୍ତୁ ଜୀବନ୍ତ ଶାରଦା: ଶତମ || 3\n ",
+    "gujarathiShloka": "અપુત્ર પુત્રિન સંતુ પુટ્રીન સંતુ પુટ્રિન :.\n અધ્ના: સાધના: સંતુ જીવનુ શારદા: શાતમ || 3\n ",
+    "bengaliShloka": "অপুত্র পুত্র সন্তু পুত্র পিউরিনঃ\n আধনাঃ সাধনাঃ সন্তু জীবন্তু শারদাঃ শাতম || 3\n "
+  },
+  {
+    "englishExplanation": [
+      "Om, may all become happy. May all be free from illness. May all see what is auspicious. May no one suffer. Om Peace, Peace, Peace."
+    ],
+    "englishShloka": "Sarve bhavantu sukhinaha, Sarve santhu niramayaaha |\n Sarve bhadrani pasyanthu, Ma kaschid dukha bhag bhaveth || 4 ||",
+    "kannadaShloka": "ಸರ್ವೇ ಭವಂತು ಸುಖಿನ:, ಸರ್ವೇ ಸಂತು ನಿರಾಮಯಾ: |\n ಸರ್ವೇ ಭದ್ರಾಣಿ ಪಶ್ಯನ್ತು ಮಾ ಕಶ್ಚಿದ್ ದುಖ: ಭಾಗ್ ಭವೇತ್ || ೪ ||\n || ಓಮ್ || ಇತಿ ಶ್ರೀ ವಿಷ್ಣು ಸಹಸ್ರ ನಾಮಾ ಸ್ತೊತ್ರ೦ ಸಂರ್ಪೂಣ೦ ||\n ",
+    "sanskritShloka": "सर्वे भवन्तु सुखिन: सर्वे सन्तु निरामया:।\n सर्वे भद्राणि पश्यन्तु मा कश्चिद् दु:खभाग्भवेत्॥४॥\n ॥ॐ॥ इति श्री विष्णु सहस्रनाम स्तोत्रम् सम्पूर्णम्॥\n ",
+    "title": "Mangala",
+    "teluguShloka": "సర్వే భవంతు సుఖిన్: సర్వే సంతు నిర్మాణ:.\n సర్వే భద్రి పాశ్యంతు మా కాచిదా దుఖాభాభాత్ || 4\n ॥ ॐ०�� ఇతి శ్రీ విష్ణు సహస్రనామ స్తోత్రం సంపూర్ణం ||\n ",
+    "tamilShloka": "சர்வே பவந்து சுகின்: சர்வே சாந்து நிர்மயா:.\n ஸர்வே பத்ராணி பஷ்யந்து மா காஷிதா தூகாபாபாவேத்|| 4\n ॥ ॐ०�� இதி ஸ்ரீ விஷ்ணு சகஸ்ரநாம ஸ்தோத்ரம் ஸபூர்ணம் ||\n ",
+    "malayalamShloka": "സർവേ ഭവന്തു സുഖിൻ: സർവേ സന്തു നിർമായ:.\n സർവേ ഭദ്രാണി പഷ്യന്തു മാ കാച്ചിദാ ദുഖബാവത് || 4\n ॥ ॐ०�� ഇത്തി ശ്രീ വിഷ്ണു സഹസ്രനാമ സ്തോത്രം സമ്പൂർണം ||\n ",
+    "oriyaShloka": "ସର୍ବେ ଭବଣ୍ଟୁ ସୁଖିନ: ସର୍ବେ ସନ୍ତୁ ନିର୍ମାୟା:.\n Sarve bhadrani pashyantu mā kāṣchidā dūkhābhābhāvēt|| 4\n ॥ ॐ०�� ଇତି ଶ୍ରୀ ବିଷ୍ଣୁ ସହସ୍ରନାମ ଷ୍ଟୋତରମ୍ ସମ୍ପୂର୍ଣ୍ଣମ୍ ||\n ",
+    "gujarathiShloka": "સર્વે ભવન્તુ સુખીન: સર્વે સંતુ નિર્માયા:.\n સર્વ ભદ્રાની પશ્યંતુ માચીડી ભભúભાભાજી|| 4\n ॥ ॐ०�� ઇતિ શ્રી વિષ્ણુ સહસ્રનામ સ્ટોટ્રમ સમ્પૂરણમ ||\n ",
+    "bengaliShloka": "সর্বে ভবন্তু সুখিন: সর্বে সন্তু নির্মায়া:.\n সর্বে ভদ্রনী পশ্যন্তু মা কাচিদা দুখভাবেত || 4\n ॥ ॐ०�� ইতি শ্রী বিষ্ণু সহস্রনাম স্তোত্রম সম্পূর্ণম ||\n "
+  }
 ]
