@@ -83139,7 +83139,7 @@ s=1
 break
 case 1:return A.E(q,r)}})
 return A.F($async$yB,r)},
-U(a){var s,r,q,p,o=this,n=null,m=new A.a8I(o),l=t.p,k=A.a([m.$2("assets/history.json","History"),m.$2("assets/invocation.json","Invocation"),m.$2("assets/dhyanam.json","Dhyanam"),m.$2("assets/sahasranama.json","Sahasranama"),m.$2("assets/phalashruthi.json","Phala Shruthi"),m.$2("assets/mangala.json","Mangala")],l)
+U(a){var s,r,q,p,o=this,n=null,m=new A.a8I(o),l=t.p,k=A.a([m.$2("history.json","History"),m.$2("invocation.json","Invocation"),m.$2("dhyanam.json","Dhyanam"),m.$2("sahasranama.json","Sahasranama"),m.$2("phalashruthi.json","Phala Shruthi"),m.$2("mangala.json","Mangala")],l)
 m=A.axg(A.a([A.K0(n,B.Lu,new A.a8K(a),n,n)],l),B.a6R)
 s=A.bQ(a,n,t.l).w
 r=o.f
