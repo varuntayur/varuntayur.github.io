@@ -53562,7 +53562,7 @@ s=p}while(true)switch(s){case 0:m.L(new A.aPL(m))
 p=4
 k=$.k_
 s=7
-return A.r((k==null?$.k_=new A.p0():k).Dc("https://varuntayur.github.io/comics-and-learning/auth/v1/callback"),$async$FJ)
+return A.r((k==null?$.k_=new A.p0():k).Dc("https://varuntayur.github.io/comics-and-learning"),$async$FJ)
 case 7:n.push(6)
 s=5
 break
