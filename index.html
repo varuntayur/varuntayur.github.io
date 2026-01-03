@@ -13,16 +13,6 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src=" https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
-
-    <!-- HOME page animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
-
     <!-- About -->
     <style>
         header {
@@ -317,6 +307,168 @@
         }
     </style>
 
+    <!-- Portfolio Carousel Styles -->
+    <style>
+        #portfolio {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        
+        #portfolio h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        
+        .portfolio-carousel .carousel-inner {
+            padding: 20px 0;
+        }
+        
+        .portfolio-carousel .carousel-item {
+            padding: 0 60px;
+        }
+        
+        .app-card {
+            background: linear-gradient(145deg, #2a2a4a, #1e1e3a);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .app-card-content {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        .app-image {
+            flex-shrink: 0;
+        }
+        
+        .app-image img {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 200px;
+            height: auto;
+        }
+        
+        .app-details {
+            flex: 1;
+        }
+        
+        .app-details h3 {
+            color: #83caff;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .app-details p {
+            color: #ccc;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .app-details ul {
+            color: #ccc;
+            padding-left: 20px;
+        }
+        
+        .app-details li {
+            margin-bottom: 8px;
+        }
+        
+        .app-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .app-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .app-links a:hover {
+            background: linear-gradient(135deg, #5c6bc0, #7986cb);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(63, 81, 181, 0.4);
+        }
+        
+        .portfolio-carousel .carousel-control-prev,
+        .portfolio-carousel .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            background: rgba(63, 81, 181, 0.8);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 1;
+        }
+        
+        .portfolio-carousel .carousel-control-prev {
+            left: 10px;
+        }
+        
+        .portfolio-carousel .carousel-control-next {
+            right: 10px;
+        }
+        
+        .portfolio-carousel .carousel-control-prev:hover,
+        .portfolio-carousel .carousel-control-next:hover {
+            background: rgba(63, 81, 181, 1);
+        }
+        
+        .portfolio-carousel .carousel-indicators {
+            bottom: -40px;
+        }
+        
+        .portfolio-carousel .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            border: none;
+            margin: 0 5px;
+        }
+        
+        .portfolio-carousel .carousel-indicators button.active {
+            background: #83caff;
+        }
+        
+        @media (max-width: 768px) {
+            .app-card-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .app-image {
+                margin: 0 auto;
+            }
+            
+            .app-links {
+                justify-content: center;
+            }
+            
+            .portfolio-carousel .carousel-item {
+                padding: 0 20px;
+            }
+        }
+    </style>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-94Z6H4XE67"></script>
     <script>
@@ -356,207 +508,182 @@
                 </div>
             </nav>
         </div>
-        <div id="#">
-            <div id="three-container"></div>
-        </div>
-        <div id="portfolio" style="padding-inline: 20px;">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Sri Vishnu Sahasranama (Android)</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Sri Vishnu Sahasranama (iOS)</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-dwadasha-tab" data-bs-toggle="pill" data-bs-target="#pills-dwadasha" type="button"
-                        role="tab" aria-controls="pills-dwadasha" aria-selected="false">Dwadasha Stotra</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-vayu-tab" data-bs-toggle="pill" data-bs-target="#pills-vayu" type="button" role="tab"
-                        aria-controls="pills-vayu"
-                        aria-selected="false">Sri Hari Vayu Stuthi</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-madhvanama-tab" data-bs-toggle="pill" data-bs-target="#pills-madhvanama"
-                        type="button" role="tab" aria-controls="pills-madhvanama"
-                        aria-selected="false">Madhvanama</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-suktas-tab" data-bs-toggle="pill" data-bs-target="#pills-suktas" type="button"
-                        role="tab" aria-controls="pills-suktas"
-                        aria-selected="false">Suktas</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-vishnu-web-tab" data-bs-toggle="pill" data-bs-target="#pills-vishnu-web"
-                        type="button" role="tab" aria-controls="pills-vishnu-web" aria-selected="false">Sri Vishnu Sahasranama
-                        (Web)</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-comic-learning-tab" data-bs-toggle="pill" data-bs-target="#pills-comic-learning"
-                        type="button" role="tab" aria-controls="pills-comic-learning" aria-selected="false">Comics and Learning</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                    tabindex="0">
-                    <div>
-                        <h2>Features</h2>
-                        <p style='text-align:justify'><span>“Sri Vishnu
-                                Sahasranama Stotra” application is unique in many ways; it provides the
-                                meaning
-                                and audio for every shloka. It makes learning the most complicated shlokas
-                                very
-                                easy.</span></p>
+        <div id="portfolio">
+            <h2>My Apps</h2>
+            <div id="portfolioCarousel" class="carousel slide portfolio-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="App 1"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="App 2"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="App 3"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="3" aria-label="App 4"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="4" aria-label="App 5"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="5" aria-label="App 6"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="6" aria-label="App 7"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="7" aria-label="App 8"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- App 1: Vishnu Sahasranama Android -->
+                    <div class="carousel-item active">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-image">
+                                    <img src="vishnu-android.fld/image001.png" alt="Sri Vishnu Sahasranama Android App">
+                                </div>
+                                <div class="app-details">
+                                    <h3>Sri Vishnu Sahasranama (Android)</h3>
+                                    <p>A unique application that provides the meaning and audio for every shloka. Makes learning the most complicated shlokas very easy with side-by-side meanings.</p>
+                                    <ul>
+                                        <li>Listen and learn to a particular shloka/name</li>
+                                        <li>View the shlokas for your birth star</li>
+                                        <li>View the shlokas of all the avataras of Vishnu</li>
+                                        <li>Display in Kannada, Sanskrit, Telugu, or English</li>
+                                    </ul>
+                                    <div class="app-links">
+                                        <a href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
+                                            Download on Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- App 2: Vishnu Sahasranama iOS -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-image">
+                                    <img src="vishnu-ios.fld/image001.jpg" alt="Sri Vishnu Sahasranama iOS App">
+                                </div>
+                                <div class="app-details">
+                                    <h3>Sri Vishnu Sahasranama (iOS)</h3>
+                                    <p>The same powerful features now available for iOS! Complete reference with meanings and audio for every shloka.</p>
+                                    <ul>
+                                        <li>Listen and learn to a particular shloka/name</li>
+                                        <li>View the shlokas for your birth star</li>
+                                        <li>View the shlokas of all the avataras of Vishnu</li>
+                                        <li>Display in Kannada, Sanskrit, or English</li>
+                                    </ul>
+                                    <div class="app-links">
+                                        <a href="https://apps.apple.com/in/app/sri-vishnu-sahasranama/id6451326611?platform=iphone" target="_blank" rel="noopener noreferrer">
+                                            Download on App Store
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <p style='text-align:center;page-break-after:avoid'><span><img width=184 height=327
-                                    id="Picture 2" src="vishnu-android.fld/image001.png"></span></p>
+                    <!-- App 3: Dwadasha Stotra -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-details">
+                                    <h3>Dwadasha Stotra Reference</h3>
+                                    <p>A comprehensive reference application for the Dwadasha Stotra - the twelve hymns composed by Sri Madhvacharya praising Lord Vishnu.</p>
+                                    <div class="app-links">
+                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
+                                            Download on Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <p style='text-align:justify'><span>&nbsp;</span></p>
+                    <!-- App 4: Sri Hari Vayu Stuthi -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-details">
+                                    <h3>Sri Hari Vayu Stuthi Reference</h3>
+                                    <p>Learn and reference the Sri Hari Vayu Stuthi with meanings and audio support.</p>
+                                    <div class="app-links">
+                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
+                                            Download on Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- App 5: Madhvanama -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-details">
+                                    <h3>Madhvanama</h3>
+                                    <p>Reference application for Madhvanama with complete text and meanings.</p>
+                                    <div class="app-links">
+                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
+                                            Download on Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <p style='text-align:justify'><span>The application provides
-                                a complete reference to all the shlokas and their meanings, it makes
-                                learning
-                                easy and quick by offering the shloka and its meaning side by side just like
-                                how you make notes. Learn/Listen to the complete Sahasranama right from its
-                                history till the Mangala shlokas.</span></p>
-                        <ul>
-                            <li>
-                                Listen and learn to a particular shloka/name.
-                            </li>
-                            <li>
-                                View the shlokas for your birth star.
-                            </li>
-                            <li>
-                                View the shlokas of all the avataras of Vishnu
-                            </li>
-                        </ul>
+                    <!-- App 6: Suktas -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-details">
+                                    <h3>Purusha/Sri Suktas Reference</h3>
+                                    <p>Complete reference for Purusha Sukta and Sri Sukta with meanings and audio.</p>
+                                    <div class="app-links">
+                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
+                                            Download on Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- App 7: Web App -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-details">
+                                    <h3>Sri Vishnu Sahasranama (Web)</h3>
+                                    <p>Access the complete Vishnu Sahasranama reference directly from your web browser. No installation required!</p>
+                                    <div class="app-links">
+                                        <a href="https://varuntayur.github.io/vishnu-sahasranama-web-app/index.html" target="_blank" rel="noopener noreferrer">
+                                            Launch Web App
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <h2>Settings</h2>
-
-                        <p><span>The application can display the Shlokas in
-                                three different languages, Kannada, Sanskrit, Telugu in addition to English.
-                                You
-                                can also configure the number of times to repeat the shlokas automatically,
-                                this can be very useful while you are learning how to pronounce them. The
-                                “Detailed
-                                Description” option allows you to turn off the meanings and explanation for
-                                the
-                                Shlokas. </span></p>
-
-                        <p style='text-align:center;page-break-after:avoid'><span><img width=235 height=398
-                                    id="Picture 3" src="vishnu-android.fld/image002.png"></span></p>
-
-                        <p style='text-align:center'><span>Settings
-                            </span><span>1</span></p>
-
-                        <p><span>By turning off &quot;Shloka meanings&quot;,
-                                you can view only the shlokas in this mode. In this mode the playback is
-                                automatic, it will auto scroll to the currently playing Shloka.</span></p>
-
-                        <p><span><a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app&hl=en&gl=US">Download
-                                    now!</a></span></p>
-
+                    <!-- App 8: Comics and Learning -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-details">
+                                    <h3>Comics and Learning</h3>
+                                    <p>An interactive learning platform combining comics with educational content.</p>
+                                    <div class="app-links">
+                                        <a href="https://varuntayur.github.io/comics-and-learning/index.html" target="_blank" rel="noopener noreferrer">
+                                            Launch Web App
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile"
-                    tabindex="0">
-                    <div>
-                        <h2>Features</h2>
-                        <p style='text-align:justify'><span>“Sri Vishnu
-                                Sahasranama Stotra” application is unique in many ways; it provides the
-                                meaning
-                                and audio for every shloka. It makes learning the most complicated shlokas
-                                very
-                                easy.</span></p>
 
-                        <p style='text-align:center;page-break-after:avoid'><span><img width=184 height=327
-                                    id="Picture 2" src="vishnu-ios.fld/image001.jpg"></span></p>
-
-                        <p style='text-align:justify'><span>The application provides
-                                a complete reference to all the shlokas and their meanings, it makes
-                                learning
-                                easy and quick by offering the shloka and its meaning side by side just like
-                                how you make notes. Learn/Listen to the complete Sahasranama right from its
-                                history till the Mangala shlokas.</span></p>
-                        <ul>
-                            <li>
-                                Listen and learn to a particular shloka/name.
-                            </li>
-                            <li>
-                                View the shlokas for your birth star.
-                            </li>
-                            <li>
-                                View the shlokas of all the avataras of Vishnu
-                            </li>
-                        </ul>
-
-
-                        <h2>Settings</h2>
-
-                        <p><span>The application can display the Shlokas in
-                                three different languages, Kannada, Sanskrit in addition to English. You
-                                can also configure the number of times to repeat the shlokas automatically,
-                                this can be very useful while you are learning how to pronounce them. The
-                                “Detailed
-                                Description” option allows you to turn off the meanings and explanation for
-                                the
-                                Shlokas. </span></p>
-
-                        <p style='text-align:center;page-break-after:avoid'><span><img width=235 height=398
-                                    id="Picture 3" src="vishnu-ios.fld/image002.jpg"></span></p>
-
-                        <p style='text-align:center'><span>Settings
-                            </span><span>1</span></p>
-
-                        <p><span>By turning off &quot;Shloka meanings&quot;,
-                                you can view only the shlokas in this mode. In this mode the playback is
-                                automatic, it will auto scroll to the currently playing Shloka.</span></p>
-
-                        <p><span><a target="_blank" rel="noopener noreferrer"
-                                    href="https://apps.apple.com/in/app/sri-vishnu-sahasranama/id6451326611?platform=iphone">Download
-                                    now!</a></span></p>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-dwadasha" role="tabpanel" aria-labelledby="pills-dwadasha"
-                    tabindex="0">
-                    <p><span><a target="_blank" rel="noopener noreferrer"
-                                href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra&hl=en&gl=US">Download
-                                now!</a></span></p>
-                </div>
-                <div class="tab-pane fade" id="pills-vayu" role="tabpanel" aria-labelledby="pills-vayu-tab"
-                    tabindex="0">
-                    <p><span><a target="_blank" rel="noopener noreferrer"
-                                href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi&hl=en&gl=US">Download
-                                now!</a></span></p>
-                </div>
-                <div class="tab-pane fade" id="pills-madhvanama" role="tabpanel" aria-labelledby="pills-madhvanama-tab"
-                    tabindex="0">
-                    <p><span><a target="_blank" rel="noopener noreferrer"
-                                href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama&hl=en&gl=US">Download
-                                now!</a></span></p>
-                </div>
-                <div class="tab-pane fade" id="pills-suktas" role="tabpanel" aria-labelledby="pills-suktas-tab"
-                    tabindex="0">
-                    <p><span><a target="_blank" rel="noopener noreferrer"
-                                href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas&hl=en&gl=US">Download
-                                now!</a></span></p>
-                </div>
-                <div class="tab-pane fade" id="pills-vishnu-web" role="tabpanel" aria-labelledby="pills-vishnu-web">
-                    <p><span><a target="_blank" rel="noopener noreferrer"
-                                href="https://varuntayur.github.io/vishnu-sahasranama-web-app/index.html">Launch Now!</a></span>(Opens in a new Tab)</p>
-                </div>
-                <div class="tab-pane fade" id="pills-comic-learning" role="tabpanel" aria-labelledby="pills-comic-learning">
-                    <p><span><a target="_blank" rel="noopener noreferrer"
-                                href="https://varuntayur.github.io/comics-and-learning/index.html">Launch Now!</a></span>(Opens in a new Tab)</p>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
         </div>
         <div id="about">
             <header>
@@ -1174,384 +1301,6 @@
         aboutPage();
     </script>
 
-    <script>
-        THREE.ShapeUtils.triangulateShape = (function () {
-            var pnlTriangulator = new PNLTRI.Triangulator();
-            return function triangulateShape(contour, holes) {
-                return pnlTriangulator.triangulate_polygon([contour].concat(holes));
-            };
-        })();
-
-        window.onload = init;
-
-        function init() {
-            var root = new THREERoot({
-                createCameraControls: !true,
-                antialias: (window.devicePixelRatio === 1),
-                fov: 60
-            });
-
-            root.renderer.setClearColor(0x000000);
-            root.renderer.setPixelRatio(window.devicePixelRatio || 1);
-            root.camera.position.set(0, 0, 600);
-
-            var textAnimation = createTextAnimation('Varun Tayur');
-            root.scene.add(textAnimation);
-
-            var light = new THREE.DirectionalLight();
-            light.position.set(0, 0, 1);
-            root.scene.add(light);
-
-            var tl = new TimelineMax({
-                repeat: -1,
-                repeatDelay: 0.5,
-                yoyo: true
-            });
-            tl.fromTo(textAnimation, 4,
-                { animationProgress: 0.0 },
-                { animationProgress: 0.6, ease: Power1.easeInOut },
-                0
-            );
-            tl.fromTo(textAnimation.rotation, 4, { y: 0 }, { y: Math.PI * 2, ease: Power1.easeInOut }, 0);
-
-            createTweenScrubber(tl);
-        }
-
-        function createTextAnimation(text) {
-            var geometry = generateTextGeometry(text, {
-                size: 40,
-                height: 12,
-                font: 'droid sans',
-                weight: 'bold',
-                style: 'normal',
-                curveSegments: 24,
-                bevelSize: 2,
-                bevelThickness: 2,
-                bevelEnabled: true,
-                anchor: { x: 0.5, y: 0.5, z: 0.0 }
-            });
-
-            THREE.BAS.Utils.tessellateRepeat(geometry, 1.0, 2);
-
-            THREE.BAS.Utils.separateFaces(geometry);
-
-            return new TextAnimation(geometry);
-        }
-
-        function generateTextGeometry(text, params) {
-            var geometry = new THREE.TextGeometry(text, params);
-
-            geometry.computeBoundingBox();
-
-            var size = geometry.boundingBox.size();
-            var anchorX = size.x * -params.anchor.x;
-            var anchorY = size.y * -params.anchor.y;
-            var anchorZ = size.z * -params.anchor.z;
-            var matrix = new THREE.Matrix4().makeTranslation(anchorX, anchorY, anchorZ);
-
-            geometry.applyMatrix(matrix);
-
-            return geometry;
-        }
-
-        ////////////////////
-        // CLASSES
-        ////////////////////
-
-        function TextAnimation(textGeometry) {
-            var bufferGeometry = new THREE.BAS.ModelBufferGeometry(textGeometry);
-
-            var aAnimation = bufferGeometry.createAttribute('aAnimation', 2);
-            var aEndPosition = bufferGeometry.createAttribute('aEndPosition', 3);
-            var aAxisAngle = bufferGeometry.createAttribute('aAxisAngle', 4);
-
-            var faceCount = bufferGeometry.faceCount;
-            var i, i2, i3, i4, v;
-
-            var maxDelay = 0.0;
-            var minDuration = 1.0;
-            var maxDuration = 1.0;
-            var stretch = 0.05;
-            var lengthFactor = 0.001;
-            var maxLength = textGeometry.boundingBox.max.length();
-
-            this.animationDuration = maxDuration + maxDelay + stretch + lengthFactor * maxLength;
-            this._animationProgress = 0;
-
-            var axis = new THREE.Vector3();
-            var angle;
-
-            for (i = 0, i2 = 0, i3 = 0, i4 = 0; i < faceCount; i++, i2 += 6, i3 += 9, i4 += 12) {
-                var face = textGeometry.faces[i];
-                var centroid = THREE.BAS.Utils.computeCentroid(textGeometry, face);
-                var centroidN = new THREE.Vector3().copy(centroid).normalize();
-
-                // animation
-                var delay = (maxLength - centroid.length()) * lengthFactor;
-                var duration = THREE.Math.randFloat(minDuration, maxDuration);
-
-                for (v = 0; v < 6; v += 2) {
-                    aAnimation.array[i2 + v] = delay + stretch * Math.random();
-                    aAnimation.array[i2 + v + 1] = duration;
-                }
-
-                // end position
-                var point = utils.fibSpherePoint(i, faceCount, 200);
-
-                for (v = 0; v < 9; v += 3) {
-                    aEndPosition.array[i3 + v] = point.x;
-                    aEndPosition.array[i3 + v + 1] = point.y;
-                    aEndPosition.array[i3 + v + 2] = point.z;
-                }
-
-                // axis angle
-                axis.x = centroidN.x;
-                axis.y = -centroidN.y;
-                axis.z = -centroidN.z;
-
-                axis.normalize();
-
-                angle = Math.PI * THREE.Math.randFloat(0.5, 2.0);
-
-                for (v = 0; v < 12; v += 4) {
-                    aAxisAngle.array[i4 + v] = axis.x;
-                    aAxisAngle.array[i4 + v + 1] = axis.y;
-                    aAxisAngle.array[i4 + v + 2] = axis.z;
-                    aAxisAngle.array[i4 + v + 3] = angle;
-                }
-            }
-
-            var material = new THREE.BAS.PhongAnimationMaterial({
-                shading: THREE.FlatShading,
-                side: THREE.DoubleSide,
-                transparent: true,
-                uniforms: {
-                    uTime: { type: 'f', value: 0 }
-                },
-                shaderFunctions: [
-                    THREE.BAS.ShaderChunk['cubic_bezier'],
-                    THREE.BAS.ShaderChunk['ease_out_cubic'],
-                    THREE.BAS.ShaderChunk['quaternion_rotation']
-                ],
-                shaderParameters: [
-                    'uniform float uTime;',
-                    'uniform vec3 uAxis;',
-                    'uniform float uAngle;',
-                    'attribute vec2 aAnimation;',
-                    'attribute vec3 aEndPosition;',
-                    'attribute vec4 aAxisAngle;'
-                ],
-                shaderVertexInit: [
-                    'float tDelay = aAnimation.x;',
-                    'float tDuration = aAnimation.y;',
-                    'float tTime = clamp(uTime - tDelay, 0.0, tDuration);',
-                    'float tProgress = ease(tTime, 0.0, 1.0, tDuration);'
-                    // 'float tProgress = tTime / tDuration;'
-                ],
-                shaderTransformPosition: [
-                    'transformed = mix(transformed, aEndPosition, tProgress);',
-
-                    'float angle = aAxisAngle.w * tProgress;',
-                    'vec4 tQuat = quatFromAxisAngle(aAxisAngle.xyz, angle);',
-                    'transformed = rotateVector(tQuat, transformed);',
-                ]
-            },
-                {
-                    diffuse: 0x444444,
-                    specular: 0xcccccc,
-                    shininess: 4
-                    //emissive:0xffffff
-                }
-            );
-
-            THREE.Mesh.call(this, bufferGeometry, material);
-
-            this.frustumCulled = false;
-        }
-        TextAnimation.prototype = Object.create(THREE.Mesh.prototype);
-        TextAnimation.prototype.constructor = TextAnimation;
-
-        Object.defineProperty(TextAnimation.prototype, 'animationProgress', {
-            get: function () {
-                return this._animationProgress;
-            },
-            set: function (v) {
-                this._animationProgress = v;
-                this.material.uniforms['uTime'].value = this.animationDuration * v;
-            }
-        });
-
-        function THREERoot(params) {
-            params = utils.extend({
-                fov: 60,
-                zNear: 10,
-                zFar: 100000,
-
-                createCameraControls: true
-            }, params);
-
-            this.renderer = new THREE.WebGLRenderer({
-                antialias: params.antialias
-            });
-            this.renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
-            document.getElementById('three-container').appendChild(this.renderer.domElement);
-
-            this.camera = new THREE.PerspectiveCamera(
-                params.fov,
-                window.innerWidth / window.innerHeight,
-                params.zNear,
-                params.zfar
-            );
-
-            this.scene = new THREE.Scene();
-
-            if (params.createCameraControls) {
-                this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
-            }
-
-            this.resize = this.resize.bind(this);
-            this.tick = this.tick.bind(this);
-
-            this.resize();
-            this.tick();
-
-            window.addEventListener('resize', this.resize, false);
-        }
-        THREERoot.prototype = {
-            tick: function () {
-                this.update();
-                this.render();
-                requestAnimationFrame(this.tick);
-            },
-            update: function () {
-                this.controls && this.controls.update();
-            },
-            render: function () {
-                this.renderer.render(this.scene, this.camera);
-            },
-            resize: function () {
-                this.camera.aspect = window.innerWidth / window.innerHeight;
-                this.camera.updateProjectionMatrix();
-
-                this.renderer.setSize(window.innerWidth, window.innerHeight);
-            }
-        };
-
-        ////////////////////
-        // UTILS
-        ////////////////////
-
-        var utils = {
-            extend: function (dst, src) {
-                for (var key in src) {
-                    dst[key] = src[key];
-                }
-
-                return dst;
-            },
-            randSign: function () {
-                return Math.random() > 0.5 ? 1 : -1;
-            },
-            ease: function (ease, t, b, c, d) {
-                return b + ease.getRatio(t / d) * c;
-            },
-            // mapEase:function(ease, v, x1, y1, x2, y2) {
-            //   var t = v;
-            //   var b = x2;
-            //   var c = y2 - x2;
-            //   var d = y1 - x1;
-            //
-            //   return utils.ease(ease, t, b, c, d);
-            // },
-            fibSpherePoint: (function () {
-                var v = { x: 0, y: 0, z: 0 };
-                var G = Math.PI * (3 - Math.sqrt(5));
-
-                return function (i, n, radius) {
-                    var step = 2.0 / n;
-                    var r, phi;
-
-                    v.y = i * step - 1 + (step * 0.5);
-                    r = Math.sqrt(1 - v.y * v.y);
-                    phi = i * G;
-                    v.x = Math.cos(phi) * r;
-                    v.z = Math.sin(phi) * r;
-
-                    radius = radius || 1;
-
-                    v.x *= radius;
-                    v.y *= radius;
-                    v.z *= radius;
-
-                    return v;
-                }
-            })()
-        };
-
-        function createTweenScrubber(tween, seekSpeed) {
-            seekSpeed = seekSpeed || 0.001;
-
-            function stop() {
-                TweenMax.to(tween, 1, { timeScale: 0 });
-            }
-
-            function resume() {
-                TweenMax.to(tween, 1, { timeScale: 1 });
-            }
-
-            function seek(dx) {
-                var progress = tween.progress();
-                var p = THREE.Math.clamp((progress + (dx * seekSpeed)), 0, 1);
-
-                tween.progress(p);
-            }
-
-            var _cx = 0;
-
-            // desktop
-            var mouseDown = false;
-            document.body.style.cursor = 'pointer';
-
-            window.addEventListener('mousedown', function (e) {
-                mouseDown = true;
-                document.body.style.cursor = 'ew-resize';
-                _cx = e.clientX;
-                stop();
-            });
-            window.addEventListener('mouseup', function (e) {
-                mouseDown = false;
-                document.body.style.cursor = 'pointer';
-                resume();
-            });
-            window.addEventListener('mousemove', function (e) {
-                if (mouseDown === true) {
-                    var cx = e.clientX;
-                    var dx = cx - _cx;
-                    _cx = cx;
-
-                    seek(dx);
-                }
-            });
-            // mobile
-            window.addEventListener('touchstart', function (e) {
-                _cx = e.touches[0].clientX;
-                stop();
-                e.preventDefault();
-            });
-            window.addEventListener('touchend', function (e) {
-                resume();
-                e.preventDefault();
-            });
-            window.addEventListener('touchmove', function (e) {
-                var cx = e.touches[0].clientX;
-                var dx = cx - _cx;
-                _cx = cx;
-
-                seek(dx);
-                e.preventDefault();
-            });
-        }
-    </script>
 </body>
 
 </html>
