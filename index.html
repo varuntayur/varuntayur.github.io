@@ -503,6 +503,356 @@
                 padding: 0 20px;
             }
         }
+        
+        /* About Section - Professional Styles */
+        .about-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        
+        .about-section .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: #fff;
+            position: relative;
+        }
+        
+        .about-section .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #3f51b5, #83caff);
+            border-radius: 2px;
+        }
+        
+        /* Bio Card */
+        .about-bio-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .bio-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .bio-avatar {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #3f51b5, #7986cb);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .bio-avatar i {
+            font-size: 60px;
+            color: #fff;
+        }
+        
+        .bio-text h3 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        .bio-tagline {
+            color: #83caff;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .bio-description {
+            color: #b0b0b0;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+        
+        .bio-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .bio-social a {
+            width: 50px;
+            height: 50px;
+            background: rgba(63, 81, 181, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .bio-social a:hover {
+            background: #3f51b5;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(63, 81, 181, 0.4);
+        }
+        
+        /* Stats */
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+            background: rgba(63, 81, 181, 0.2);
+            border-color: #3f51b5;
+        }
+        
+        .stat-icon {
+            font-size: 2rem;
+            color: #83caff;
+            margin-bottom: 15px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+        }
+        
+        /* Skills */
+        .about-skills {
+            margin-bottom: 60px;
+        }
+        
+        .skills-title, .education-title, .milestones-title {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        
+        .skill-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-8px);
+            background: rgba(63, 81, 181, 0.15);
+            border-color: #3f51b5;
+        }
+        
+        .skill-card i {
+            font-size: 2.5rem;
+            color: #83caff;
+            margin-bottom: 15px;
+        }
+        
+        .skill-card h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .skill-card p {
+            color: #888;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        /* Education */
+        .about-education {
+            margin-bottom: 60px;
+        }
+        
+        .education-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        .edu-card {
+            display: flex;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .edu-card:hover {
+            transform: translateX(10px);
+            border-color: #3f51b5;
+        }
+        
+        .edu-year {
+            background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 15px;
+            border-radius: 12px;
+            height: fit-content;
+        }
+        
+        .edu-details h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .edu-details p {
+            color: #888;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .edu-focus {
+            color: #83caff;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        /* Milestones */
+        .about-milestones {
+            margin-bottom: 40px;
+        }
+        
+        .milestone-timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .milestone-timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #3f51b5, #83caff);
+            border-radius: 3px;
+        }
+        
+        .milestone-item {
+            position: relative;
+            padding: 20px 0;
+            padding-left: 30px;
+        }
+        
+        .milestone-dot {
+            position: absolute;
+            left: -34px;
+            top: 25px;
+            width: 16px;
+            height: 16px;
+            background: #3f51b5;
+            border-radius: 50%;
+            border: 3px solid #1a1a2e;
+        }
+        
+        .milestone-content {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .milestone-date {
+            display: inline-block;
+            background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .milestone-content p {
+            color: #b0b0b0;
+            margin: 0;
+            font-size: 1rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .about-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .bio-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .bio-social {
+                justify-content: center;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .education-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -573,7 +923,7 @@
                                         <li>Play a unique quiz to test your knowledge</li>
                                         <li>Display in Kannada, Sanskrit, Telugu, Odia, Malayalam, Tamil</li>
                                     </ul>
-                                    <div class="app-stats">⭐ 4.4 rating • 10K+ downloads</div>
+                                    <div class="app-stats">â­ 4.4 rating â€¢ 10K+ downloads</div>
                                     <div class="app-links">
                                         <a href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app" target="_blank" rel="noopener noreferrer">
                                             Google Play
@@ -603,7 +953,7 @@
                                         <li>Display in Sanskrit, Kannada, or English</li>
                                         <li>Learning mode toggle for continuous listening</li>
                                     </ul>
-                                    <div class="app-stats">⭐ 4.6 rating • 10K+ downloads</div>
+                                    <div class="app-stats">â­ 4.6 rating â€¢ 10K+ downloads</div>
                                     <div class="app-links">
                                         <a href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas" target="_blank" rel="noopener noreferrer">
                                             Google Play
@@ -630,7 +980,7 @@
                                         <li>Meaning of each shloka with Phala Shruthi</li>
                                         <li>Includes Anu, Khila, and Laghu Vayu Stuthi</li>
                                     </ul>
-                                    <div class="app-stats">⭐ 4.3 rating • 5K+ downloads</div>
+                                    <div class="app-stats">â­ 4.3 rating â€¢ 5K+ downloads</div>
                                     <div class="app-links">
                                         <a href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi" target="_blank" rel="noopener noreferrer">
                                             Google Play
@@ -657,7 +1007,7 @@
                                         <li>Song sung by Mrs. Pooja M Tayur (classical singer)</li>
                                         <li>For those who don't know Sanskrit</li>
                                     </ul>
-                                    <div class="app-stats">⭐ 4.6 rating • 1K+ downloads</div>
+                                    <div class="app-stats">â­ 4.6 rating â€¢ 1K+ downloads</div>
                                     <div class="app-links">
                                         <a href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama" target="_blank" rel="noopener noreferrer">
                                             Google Play
@@ -684,7 +1034,7 @@
                                         <li>Meaning and Phala Shruthi of each verse</li>
                                         <li>Learning mode for continuous listening</li>
                                     </ul>
-                                    <div class="app-stats">⭐ 4.5 rating • 5K+ downloads</div>
+                                    <div class="app-stats">â­ 4.5 rating â€¢ 5K+ downloads</div>
                                     <div class="app-links">
                                         <a href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra" target="_blank" rel="noopener noreferrer">
                                             Google Play
@@ -751,513 +1101,177 @@
                 </button>
             </div>
         </div>
-        <div id="about">
-            <header>
-                <div class="container text-center">
-                    <h1>About me</h1>
-                </div>
-            </header>
-
-            <br />
-
-            <section class="timeline">
-                <div class="container">
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Vishnu Sahasranama Reference" (iOS)
-                                v1.3
-                                released</h2>
-                            <div class="date">Apr 2024</div>
-                            <p style="color: black; padding-inline-start: 150px;">
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://apps.apple.com/in/app/sri-vishnu-sahasranama/id6451326611?platform=iphone">Download
-                                    now!</a>
+        
+        <!-- About Section - Professional & Interactive -->
+        <div id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                
+                <!-- Bio Card -->
+                <div class="about-bio-card js--fadeInLeft">
+                    <div class="bio-content">
+                        <div class="bio-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="bio-text">
+                            <h3>Varun Tayur, Ph.D.</h3>
+                            <p class="bio-tagline">Software Developer • Researcher • Mobile App Creator</p>
+                            <p class="bio-description">
+                                Passionate about creating meaningful software that bridges technology and spirituality. 
+                                With a Ph.D. in Computer Science focusing on IoT interoperability and machine learning, 
+                                I combine academic rigor with practical app development. My apps have been downloaded 
+                                by over 30,000 users worldwide, helping people learn and practice ancient Sanskrit texts.
                             </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Purusha/Sri Suktas Reference"
-                                v2.3 released</h2>
-                            <div class="date">Dec 2023</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Purusha/Sri Suktas Reference"
-                                v2.3 released</h2>
-                            <div class="date">Dec 2023</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Vishnu Sahasranama Stotra"
-                                v1.9.4 released</h2>
-                            <div class="date">Nov 2023</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInRight">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Dwadasha Stotra" v1.8.0 released
-                            </h2>
-                            <div class="date">Aug 2023</div>
-                            <p style="color: black; padding-inline-start: 150px;">
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Hari Vayu
-                                Stuthi" v1.7.0 released</h2>
-                            <div class="date">Aug 2023</div>
-                            <p style="color: black; padding-inline-start: 150px;">
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Vishnu Sahasranama Reference" v1.0.0
-                                released</h2>
-                            <div class="date">Jul 2023</div>
-                            <p style="color: black; padding-inline-start: 150px;">
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://apps.apple.com/in/app/sri-vishnu-sahasranama/id6451326611?platform=iphone">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content js--fadeInLeft">
-                            <h2 style="color: black;">Ph.D Computer Science, Jain(deemed to be university)</h2>
-                            <div class="date">Feb 2023</div>
-                            <p style="color: black;">My interest towards programming got me into exploring in depth
-                                about
-                                the 'Things' and how they work. My work concentrated on improving the
-                                interoperability between devices. The highlight of the work was the design of an
-                                algorithm that utilises machine learning to find new relations in the domain
-                                models that can be used to train systems to interoperate more gracefully. My
-                                publications are listed <a
-                                    href="https://scholar.google.com/citations?user=nLbklpYAAAAJ&hl=en">here</a>.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Hari Vayu
-                                Stuthi" v1.6.0 released</h2>
-                            <div class="date">Jan 2023</div>
-                            <p style="color: black; padding-inline-start: 150px;">
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Vishnu Sahasranama Stotra"
-                                v1.8.0 released</h2>
-                            <div class="date">Jan 2023</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Madhvanama" v2.2 released
-                                application</h2>
-                            <div class="date">Dec 2022</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInRight">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Dwadasha Stotra" v1.7.0 released
-                            </h2>
-                            <div class="date">Dec 2022</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Madhvanama" v2.0 released
-                                application</h2>
-                            <div class="date">Dec 2019</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Purusha/Sri Suktas Reference"
-                                v2.0 released</h2>
-                            <div class="date">Dec 2019</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Dwadasha Stotra" v1.6.0 released
-                            </h2>
-                            <div class="date">Oct 2019</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra&hl=en&gl=US">Download
-                                    now!</a></p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Vishnu Sahasranama Stotra"
-                                v1.7.0 released</h2>
-                            <div class="date">Oct 2019</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Hari Vayu
-                                Stuthi" v1.5.0 released</h2>
-                            <div class="date">Oct 2018</div>
-                            <p style="color: black; padding-inline-start: 150px;">
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInRight">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Dwadasha Stotra" v1.4.0 released
-                            </h2>
-                            <div class="date">Oct 2018</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Madhvanama" v1.0.3 released
-                                application</h2>
-                            <div class="date">Aug 2018</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Vishnu Sahasranama Stotra"
-                                v1.6.0 released</h2>
-                            <div class="date">Aug 2018</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Madhvanama" v1.0.2 released
-                                application</h2>
-                            <div class="date">Aug 2018</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Hari Vayu
-                                Stuthi" v1.4.0 released</h2>
-                            <div class="date">Jul 2018</div>
-                            <p style="color: black; padding-inline-start: 150px;">
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Hari Vayu
-                                Stuthi" v1.3.2 released</h2>
-                            <div class="date">Aug 2017</div>
-                            <p style="color: black; padding-inline-start: 150px;">
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Hari Vayu
-                                Stuthi" v1.3.0 released</h2>
-                            <div class="date">Jan 2017</div>
-                            <p style="color: black; padding-inline-start: 150px;">
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Vishnu Sahasranama Stotra"
-                                v1.5.0 released</h2>
-                            <div class="date">Aug 2018</div>
-                            <p style="color: black; padding-inline-start: 150px;"><a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">Initial release of "Madhvanama"
-                                application</h2>
-                            <div class="date">Nov 2016</div>
-                            <p style="color: black; padding-inline-start: 150px;">One of the most popular works of
-                                Shripadaraja is madhvanama. This is a kannada poem extolling Vayu Devaru and his three
-                                incarnations. It follows the structure of Shri Hari-Vayu stuti and was composed by
-                                Shripadarajaru for the benefit of those who don't know sanskrit and / or are not allowed
-                                to recite the Vayu-stuti.<a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">Initial release of "Dwadasha Stotra"
-                                application</h2>
-                            <div class="date">Aug 2016</div>
-                            <p style="color: black; padding-inline-start: 150px;">Dvadasha stotra is a series of 12
-                                Stotras composed by Sri Madhvacharya, the 13th-century founder of the Tattvavada or
-                                Dvaita school of philosophy. 'Dvadasha' in Sanskrit means 12 and all the 12 stotras are
-                                in praise of Lord Vishnu.It is believed that the stotras were composed in connection
-                                with the installation of the idol of Lord Krishna at Udupi. While most of the 12 stotras
-                                are praises of the Lord, the third stotra is actually a summary of Madhvacharya's
-                                philosophy.<a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">Initial release of "Purusha/Sri
-                                Suktas Reference"
-                                application</h2>
-                            <div class="date">Aug 2016</div>
-                            <p style="color: black; padding-inline-start: 150px;">Suktas can be called as the summaries
-                                of the vedas, This application tries to explain the meaning of each verse of the Purusha
-                                Sukta, Narayana Sukta, Sri Sukta and Durga Sukta. You can easily listen(offline) to the
-                                suktas verse by verse and read the meaning along with it.<a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">Initial release of "Sri Hari Vayu
-                                Stuthi"
-                                application</h2>
-                            <div class="date">Aug 2016</div>
-                            <p style="color: black; padding-inline-start: 150px;">Vayu Stuti is one of the most famous
-                                poems composed by Sri Trivikrama Panditacharya in praise of Sri Madhvacharya, the
-                                founder of the Dvaita school of philosophy.
-                                It is said that when Trivikrama Panditacharya presented his work, Sri Madhva insisted
-                                that the work should not be dedicated to his praise alone and instantly composed the
-                                Nakha Stuti and instructed that it be chanted before and after the Vayu Stuti.
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Purusha/Sri Suktas Reference"
-                                v1.1 released</h2>
-                            <div class="date">Aug 2016</div>
-                            <p style="color: black; padding-inline-start: 150px;">Suktas can be called as the summaries
-                                of the vedas, This application tries to explain the meaning of each verse of the Purusha
-                                Sukta, Narayana Sukta, Sri Sukta and Durga Sukta. You can easily listen(offline) to the
-                                suktas verse by verse and read the meaning along with it.<a target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInLeft">
-                            <h2 style="color: black; padding-inline-start: 150px;">"Sri Vishnu Sahasranama Stotra"
-                                first release</h2>
-                            <div class="date">Dec 2015</div>
-                            <p style="color: black; padding-inline-start: 150px;">Vishnu Sahasranama Complete reference
-                                gives a complete reference to all shlokas and their meanings in "easy to view" way.
-                                Learn/Listen to the complete Sahasranama right from it's history till the Mangala
-                                shlokas.<a target="_blank" rel="noopener noreferrer"
-                                    href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app&hl=en&gl=US">Download
-                                    now!</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content timeline-card js--fadeInRight">
-                            <h2 style="color: black; padding-inline-start: 150px;">Master <span>of </span> Philosophy,
-                                Jain(deemed to be university)</h2>
-                            <div class="date">Aug 2015</div>
-                            <p style="color: black; padding-inline-start: 150px;">The research work was on "Software
-                                Defined Environment for Internet of Things". My
-                                publications are listed <a
-                                    href="https://scholar.google.com/citations?user=nLbklpYAAAAJ&hl=en">here</a>.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content js--fadeInLeft">
-                            <div class="date">JUN 2011</div>
-                            <h2 style="color: black;">Master of Science, BITS Pilani</h2>
-                            <blockquote>The research work involved developing an algorithm for efficient routing tables
-                                for TDM switches.</blockquote>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        <div class="timeline-content js--fadeInRight">
-                            <div class="date">JUN 2007</div>
-                            <h2 style="color: black;">Bachelor of Engineering, Computer Science, V.T.U</h2>
-                            <blockquote>My project work was to develop a VoIP soft client for our college.</blockquote>
+                            <div class="bio-social">
+                                <a href="https://play.google.com/store/apps/dev?id=7531622189850905021" target="_blank" rel="noopener noreferrer" title="Google Play">
+                                    <i class="fab fa-google-play"></i>
+                                </a>
+                                <a href="https://apps.apple.com/in/app/sri-vishnu-sahasranama/id6451326611" target="_blank" rel="noopener noreferrer" title="App Store">
+                                    <i class="fab fa-app-store-ios"></i>
+                                </a>
+                                <a href="https://scholar.google.com/citations?user=nLbklpYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+                
+                <!-- Stats Counter -->
+                <div class="about-stats js--fadeInRight">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="stat-number" data-target="6">0</div>
+                        <div class="stat-label">Published Apps</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-download"></i></div>
+                        <div class="stat-number" data-target="30">0</div>
+                        <div class="stat-label">K+ Downloads</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-star"></i></div>
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Avg Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="stat-number" data-target="7">0</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                </div>
+                
+                <!-- Skills/Expertise -->
+                <div class="about-skills js--fadeInLeft">
+                    <h3 class="skills-title">Skills & Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-android"></i>
+                            <h4>Android Development</h4>
+                            <p>Kotlin, Java, Android SDK</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-apple"></i>
+                            <h4>iOS Development</h4>
+                            <p>Swift, SwiftUI, Xcode</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-feather-alt"></i>
+                            <h4>Flutter</h4>
+                            <p>Cross-platform, Dart</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-brain"></i>
+                            <h4>Machine Learning</h4>
+                            <p>GANs, Ontology Mapping</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>IoT</h4>
+                            <p>Interoperability, SDN</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code"></i>
+                            <h4>Web Development</h4>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education Timeline (Condensed) -->
+                <div class="about-education js--fadeInRight">
+                    <h3 class="education-title">Education</h3>
+                    <div class="education-cards">
+                        <div class="edu-card">
+                            <div class="edu-year">2023</div>
+                            <div class="edu-details">
+                                <h4>Ph.D. Computer Science</h4>
+                                <p>Jain (Deemed-to-be University)</p>
+                                <span class="edu-focus">IoT Interoperability & Machine Learning</span>
+                            </div>
+                        </div>
+                        <div class="edu-card">
+                            <div class="edu-year">2015</div>
+                            <div class="edu-details">
+                                <h4>M.Phil. Computer Science</h4>
+                                <p>Jain (Deemed-to-be University)</p>
+                                <span class="edu-focus">Software Defined Environment for IoT</span>
+                            </div>
+                        </div>
+                        <div class="edu-card">
+                            <div class="edu-year">2011</div>
+                            <div class="edu-details">
+                                <h4>M.Sc. Computer Science</h4>
+                                <p>BITS Pilani</p>
+                                <span class="edu-focus">TDM Switch Routing Algorithms</span>
+                            </div>
+                        </div>
+                        <div class="edu-card">
+                            <div class="edu-year">2007</div>
+                            <div class="edu-details">
+                                <h4>B.E. Computer Science</h4>
+                                <p>V.T.U.</p>
+                                <span class="edu-focus">VoIP Soft Client Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Key Milestones -->
+                <div class="about-milestones js--fadeInLeft">
+                    <h3 class="milestones-title">Key Milestones</h3>
+                    <div class="milestone-timeline">
+                        <div class="milestone-item">
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-content">
+                                <span class="milestone-date">2024</span>
+                                <p>Launched iOS app - Vishnu Sahasranama on App Store</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-content">
+                                <span class="milestone-date">2023</span>
+                                <p>Completed Ph.D. with focus on ML-based ontology mapping</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-content">
+                                <span class="milestone-date">2022</span>
+                                <p>Published in Internet of Things journal (SCIE)</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-content">
+                                <span class="milestone-date">2015</span>
+                                <p>First Android app - Vishnu Sahasranama Stotra released</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="research">
             <header>
@@ -1276,8 +1290,8 @@
                     https://ieeexplore.ieee.org/abstract/document/7154707
                     </a>
                 </li>
-                <li>V. M. Tayur and R. Suchithra, ”Modelling Context Awareness in Internet of Things with Business
-                    Process Model and Notation 2.0 extensions” in the International Journal of Advanced Intelligence
+                <li>V. M. Tayur and R. Suchithra, â€Modelling Context Awareness in Internet of Things with Business
+                    Process Model and Notation 2.0 extensionsâ€ in the International Journal of Advanced Intelligence
                     Paradigms (IJAIP) , Vol 20, Nos 3/4, 2021, pp 374-387. DOI: 10.1504/IJAIP.2021.119025 (Scopus
                     Journal)</li>
                 <li>Varun M Tayur, R Suchithra, Multi-ontology mapping generative adversarial network in internet of
@@ -1288,16 +1302,16 @@
                     Knowledge Representation and Machine Learning: Prediction and Analysis for Knowledge Representation
                     and Machine Learning (1st ed.). Chapman and Hall/CRC. Available online:
                     https://doi.org/10.1201/9781003126898.</li>
-                <li>V. M. Tayur and R. Suchithra, ”A Comprehensive Ontology for Internet of Things (COIoT)”, 2019
+                <li>V. M. Tayur and R. Suchithra, â€A Comprehensive Ontology for Internet of Things (COIoT)â€, 2019
                     Second International Conference on Advanced Computational and Communication Paradigms (ICACCP),
                     Gangtok, India, 2019, pp. 1-6. doi: 10.1109/ICACCP.2019.8882936. Available online:
                     https://ieeexplore.ieee.org/document/8882936</li>
-                <li>V. M. Tayur and R. Suchithra, ”Review of interoperability approaches in application layer of
-                    Internet of Things,” 2017 , IEEE International Conference on Innovative Mechanisms for Industry
+                <li>V. M. Tayur and R. Suchithra, â€Review of interoperability approaches in application layer of
+                    Internet of Things,â€ 2017 , IEEE International Conference on Innovative Mechanisms for Industry
                     Applications (ICIMIA), Bengaluru, India, 2017, pp. 322-326. doi: 10.1109/ICIMIA.2017.7975628.
                     Available online: https://ieeexplore.ieee.org/document/7975628</li>
                 <li>Varun M Tayur, Dr. Suchithra R, 2016, Smart Healthcare: A Review of Architectures, INTERNATIONAL
-                    JOURNAL OF ENGINEERING RESEARCH and TECHNOLOGY (IJERT) ICRET – 2016 (Volume 4 – Issue
+                    JOURNAL OF ENGINEERING RESEARCH and TECHNOLOGY (IJERT) ICRET â€“ 2016 (Volume 4 â€“ Issue
                     21). Available online: https://www.ijert.org/smart-healthcare-a-review-of-architectures</li>
             </ol>
 
@@ -1365,6 +1379,35 @@
         };
 
         aboutPage();
+        
+        // Animated Stats Counter
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute('data-target'));
+                        let current = 0;
+                        const increment = target / 50;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                entry.target.textContent = target;
+                                clearInterval(timer);
+                            } else {
+                                entry.target.textContent = Math.ceil(current);
+                            }
+                        }, 30);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statNumbers.forEach(num => observer.observe(num));
+        }
+        
+        animateStats();
     </script>
 
 </body>
