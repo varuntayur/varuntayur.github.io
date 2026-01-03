@@ -7,6 +7,8 @@
     <title>Varun Tayur - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -408,6 +410,40 @@
             box-shadow: 0 10px 30px rgba(63, 81, 181, 0.4);
         }
         
+        .app-stats {
+            color: #ffd700;
+            font-size: 0.95rem;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        
+        .app-icon-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 160px;
+            height: 160px;
+            border-radius: 24px;
+            font-size: 64px;
+            color: #fff;
+        }
+        
+        .app-icon-placeholder.suktas-icon {
+            background: linear-gradient(135deg, #FF6B35, #F7931E);
+        }
+        
+        .app-icon-placeholder.vayu-icon {
+            background: linear-gradient(135deg, #00BCD4, #4DD0E1);
+        }
+        
+        .app-icon-placeholder.madhva-icon {
+            background: linear-gradient(135deg, #9C27B0, #BA68C8);
+        }
+        
+        .app-icon-placeholder.dwadasha-icon {
+            background: linear-gradient(135deg, #FF5722, #FF8A65);
+        }
+        
         .portfolio-carousel .carousel-control-prev,
         .portfolio-carousel .carousel-control-next {
             width: 50px;
@@ -519,134 +555,161 @@
                     <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="4" aria-label="App 5"></button>
                     <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="5" aria-label="App 6"></button>
                     <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="6" aria-label="App 7"></button>
-                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="7" aria-label="App 8"></button>
                 </div>
                 <div class="carousel-inner">
-                    <!-- App 1: Vishnu Sahasranama Android -->
+                    <!-- App 1: Vishnu Sahasranama Stotra -->
                     <div class="carousel-item active">
                         <div class="app-card">
                             <div class="app-card-content">
                                 <div class="app-image">
-                                    <img src="vishnu-android.fld/image001.png" alt="Sri Vishnu Sahasranama Android App">
+                                    <img src="vishnu-android.fld/image001.png" alt="Vishnu Sahasranama Stotra">
                                 </div>
                                 <div class="app-details">
-                                    <h3>Sri Vishnu Sahasranama (Android)</h3>
-                                    <p>A unique application that provides the meaning and audio for every shloka. Makes learning the most complicated shlokas very easy with side-by-side meanings.</p>
+                                    <h3>Vishnu Sahasranama Stotra</h3>
+                                    <p>Complete reference to all shlokas and their meanings. Learn/Listen to the complete Sahasranama from history to Mangala shlokas.</p>
                                     <ul>
-                                        <li>Listen and learn to a particular shloka/name</li>
-                                        <li>View the shlokas for your birth star</li>
-                                        <li>View the shlokas of all the avataras of Vishnu</li>
-                                        <li>Display in Kannada, Sanskrit, Telugu, or English</li>
+                                        <li>Easily listen/learn to a particular shloka/name</li>
+                                        <li>View shlokas for your birth star or avatara</li>
+                                        <li>Play a unique quiz to test your knowledge</li>
+                                        <li>Display in Kannada, Sanskrit, Telugu, Odia, Malayalam, Tamil</li>
                                     </ul>
+                                    <div class="app-stats">⭐ 4.4 rating • 10K+ downloads</div>
                                     <div class="app-links">
-                                        <a href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
-                                            Download on Google Play
+                                        <a href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app" target="_blank" rel="noopener noreferrer">
+                                            Google Play
+                                        </a>
+                                        <a href="https://apps.apple.com/in/app/sri-vishnu-sahasranama/id6451326611" target="_blank" rel="noopener noreferrer">
+                                            App Store
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- App 2: Vishnu Sahasranama iOS -->
+
+                    <!-- App 2: Suktas -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-image app-icon-placeholder suktas-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="app-details">
+                                    <h3>Suktas</h3>
+                                    <p>Suktas are the summaries of the Vedas. Learn the meaning of each verse of Purusha Sukta, Narayana Sukta, Sri Sukta, and Durga Sukta with offline audio.</p>
+                                    <ul>
+                                        <li>Brief introduction to each Sukta</li>
+                                        <li>Meaning with audio for each verse</li>
+                                        <li>Display in Sanskrit, Kannada, or English</li>
+                                        <li>Learning mode toggle for continuous listening</li>
+                                    </ul>
+                                    <div class="app-stats">⭐ 4.6 rating • 10K+ downloads</div>
+                                    <div class="app-links">
+                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas" target="_blank" rel="noopener noreferrer">
+                                            Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 3: Sri Hari Vayu Stuthi -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-image app-icon-placeholder vayu-icon">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <div class="app-details">
+                                    <h3>Sri Hari Vayu Stuthi Reference</h3>
+                                    <p>Vayu Stuti - one of the most famous poems by Sri Trivikrama Panditacharya in praise of Sri Madhvacharya. Includes Nakha Stuti and all 41 paras.</p>
+                                    <ul>
+                                        <li>Brief account of Parayana procedures</li>
+                                        <li>Complete text and audio in Devanagari, English, Kannada</li>
+                                        <li>Meaning of each shloka with Phala Shruthi</li>
+                                        <li>Includes Anu, Khila, and Laghu Vayu Stuthi</li>
+                                    </ul>
+                                    <div class="app-stats">⭐ 4.3 rating • 5K+ downloads</div>
+                                    <div class="app-links">
+                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi" target="_blank" rel="noopener noreferrer">
+                                            Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 4: Madhvanama -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-image app-icon-placeholder madhva-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                                <div class="app-details">
+                                    <h3>Madhvanama (Madhwanama)</h3>
+                                    <p>Popular Kannada poem by Shripadaraja extolling Vayu Devaru and his three incarnations. Follows the structure of Sri Hari-Vayu Stuti.</p>
+                                    <ul>
+                                        <li>Learn each shloka with meaning and expert discussion</li>
+                                        <li>Listen to all shlokas as a complete song</li>
+                                        <li>Song sung by Mrs. Pooja M Tayur (classical singer)</li>
+                                        <li>For those who don't know Sanskrit</li>
+                                    </ul>
+                                    <div class="app-stats">⭐ 4.6 rating • 1K+ downloads</div>
+                                    <div class="app-links">
+                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama" target="_blank" rel="noopener noreferrer">
+                                            Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 5: Dwadasha Stotra -->
+                    <div class="carousel-item">
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-image app-icon-placeholder dwadasha-icon">
+                                    <i class="fas fa-om"></i>
+                                </div>
+                                <div class="app-details">
+                                    <h3>Dwadasha (Dvadasha) Stotra</h3>
+                                    <p>12 Stotras composed by Sri Madhvacharya in praise of Lord Vishnu. Connected to the installation of Lord Krishna's idol at Udupi.</p>
+                                    <ul>
+                                        <li>Brief introduction to each stotra</li>
+                                        <li>Complete text/audio in Devanagari, English, Kannada</li>
+                                        <li>Meaning and Phala Shruthi of each verse</li>
+                                        <li>Learning mode for continuous listening</li>
+                                    </ul>
+                                    <div class="app-stats">⭐ 4.5 rating • 5K+ downloads</div>
+                                    <div class="app-links">
+                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra" target="_blank" rel="noopener noreferrer">
+                                            Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App 6: Web App -->
                     <div class="carousel-item">
                         <div class="app-card">
                             <div class="app-card-content">
                                 <div class="app-image">
-                                    <img src="vishnu-ios.fld/image001.jpg" alt="Sri Vishnu Sahasranama iOS App">
+                                    <img src="vishnu-sahasranama-web-app/icons/Icon-512.png" alt="Sri Vishnu Sahasranama Web">
                                 </div>
-                                <div class="app-details">
-                                    <h3>Sri Vishnu Sahasranama (iOS)</h3>
-                                    <p>The same powerful features now available for iOS! Complete reference with meanings and audio for every shloka.</p>
-                                    <ul>
-                                        <li>Listen and learn to a particular shloka/name</li>
-                                        <li>View the shlokas for your birth star</li>
-                                        <li>View the shlokas of all the avataras of Vishnu</li>
-                                        <li>Display in Kannada, Sanskrit, or English</li>
-                                    </ul>
-                                    <div class="app-links">
-                                        <a href="https://apps.apple.com/in/app/sri-vishnu-sahasranama/id6451326611?platform=iphone" target="_blank" rel="noopener noreferrer">
-                                            Download on App Store
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- App 3: Dwadasha Stotra -->
-                    <div class="carousel-item">
-                        <div class="app-card">
-                            <div class="app-card-content">
-                                <div class="app-details">
-                                    <h3>Dwadasha Stotra Reference</h3>
-                                    <p>A comprehensive reference application for the Dwadasha Stotra - the twelve hymns composed by Sri Madhvacharya praising Lord Vishnu.</p>
-                                    <div class="app-links">
-                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
-                                            Download on Google Play
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- App 4: Sri Hari Vayu Stuthi -->
-                    <div class="carousel-item">
-                        <div class="app-card">
-                            <div class="app-card-content">
-                                <div class="app-details">
-                                    <h3>Sri Hari Vayu Stuthi Reference</h3>
-                                    <p>Learn and reference the Sri Hari Vayu Stuthi with meanings and audio support.</p>
-                                    <div class="app-links">
-                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
-                                            Download on Google Play
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- App 5: Madhvanama -->
-                    <div class="carousel-item">
-                        <div class="app-card">
-                            <div class="app-card-content">
-                                <div class="app-details">
-                                    <h3>Madhvanama</h3>
-                                    <p>Reference application for Madhvanama with complete text and meanings.</p>
-                                    <div class="app-links">
-                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
-                                            Download on Google Play
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- App 6: Suktas -->
-                    <div class="carousel-item">
-                        <div class="app-card">
-                            <div class="app-card-content">
-                                <div class="app-details">
-                                    <h3>Purusha/Sri Suktas Reference</h3>
-                                    <p>Complete reference for Purusha Sukta and Sri Sukta with meanings and audio.</p>
-                                    <div class="app-links">
-                                        <a href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
-                                            Download on Google Play
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- App 7: Web App -->
-                    <div class="carousel-item">
-                        <div class="app-card">
-                            <div class="app-card-content">
                                 <div class="app-details">
                                     <h3>Sri Vishnu Sahasranama (Web)</h3>
                                     <p>Access the complete Vishnu Sahasranama reference directly from your web browser. No installation required!</p>
+                                    <ul>
+                                        <li>Works on any device with a browser</li>
+                                        <li>Same features as the mobile app</li>
+                                        <li>Instant access - no download needed</li>
+                                    </ul>
                                     <div class="app-links">
                                         <a href="https://varuntayur.github.io/vishnu-sahasranama-web-app/index.html" target="_blank" rel="noopener noreferrer">
                                             Launch Web App
@@ -657,13 +720,16 @@
                         </div>
                     </div>
 
-                    <!-- App 8: Comics and Learning -->
+                    <!-- App 7: Comics and Learning -->
                     <div class="carousel-item">
                         <div class="app-card">
                             <div class="app-card-content">
+                                <div class="app-image">
+                                    <img src="comics-and-learning/icons/Icon-512.png" alt="Comics and Learning">
+                                </div>
                                 <div class="app-details">
                                     <h3>Comics and Learning</h3>
-                                    <p>An interactive learning platform combining comics with educational content.</p>
+                                    <p>An interactive learning platform combining comics with educational content for an engaging learning experience.</p>
                                     <div class="app-links">
                                         <a href="https://varuntayur.github.io/comics-and-learning/index.html" target="_blank" rel="noopener noreferrer">
                                             Launch Web App
