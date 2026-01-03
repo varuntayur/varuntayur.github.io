@@ -853,6 +853,244 @@
                 font-size: 2rem;
             }
         }
+        
+        /* Research Section - Professional Styles */
+        .research-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+        }
+        
+        .research-section .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #fff;
+            position: relative;
+        }
+        
+        .research-section .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #3f51b5, #83caff);
+            border-radius: 2px;
+        }
+        
+        .research-intro {
+            text-align: center;
+            color: #b0b0b0;
+            max-width: 700px;
+            margin: 40px auto 50px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        /* Publication Stats */
+        .pub-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+        
+        .pub-stat-item {
+            text-align: center;
+        }
+        
+        .pub-stat-item i {
+            font-size: 2rem;
+            color: #83caff;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .pub-stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+            display: block;
+        }
+        
+        .pub-stat-label {
+            color: #888;
+            font-size: 0.95rem;
+        }
+        
+        /* Publications List */
+        .publications-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .publication-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .publication-card:hover {
+            transform: translateX(10px);
+            border-color: rgba(63, 81, 181, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .publication-card.featured {
+            border-left: 4px solid #3f51b5;
+        }
+        
+        .pub-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+        
+        .pub-badge.scie {
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: #fff;
+        }
+        
+        .pub-badge.scopus {
+            background: linear-gradient(135deg, #FF9800, #FFB74D);
+            color: #fff;
+        }
+        
+        .pub-badge.ieee {
+            background: linear-gradient(135deg, #2196F3, #64B5F6);
+            color: #fff;
+        }
+        
+        .pub-badge.chapter {
+            background: linear-gradient(135deg, #9C27B0, #BA68C8);
+            color: #fff;
+        }
+        
+        .pub-badge.journal {
+            background: linear-gradient(135deg, #607D8B, #90A4AE);
+            color: #fff;
+        }
+        
+        .pub-content h4 {
+            color: #fff;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        
+        .pub-authors {
+            color: #83caff;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+        
+        .pub-venue {
+            color: #888;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .pub-meta {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        
+        .pub-meta span {
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        .pub-meta i {
+            margin-right: 6px;
+            color: #83caff;
+        }
+        
+        .pub-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #83caff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .pub-link:hover {
+            color: #fff;
+            transform: translateX(5px);
+        }
+        
+        .pub-link i {
+            font-size: 0.8rem;
+        }
+        
+        /* Google Scholar Button */
+        .scholar-link-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .scholar-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+            color: #fff;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .scholar-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(63, 81, 181, 0.4);
+            color: #fff;
+        }
+        
+        .scholar-btn i {
+            font-size: 1.3rem;
+        }
+        
+        /* Research Responsive */
+        @media (max-width: 768px) {
+            .pub-stats {
+                gap: 30px;
+            }
+            
+            .pub-stat-number {
+                font-size: 2rem;
+            }
+            
+            .publication-card {
+                padding: 20px;
+            }
+            
+            .pub-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -885,8 +1123,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
                             <a class="nav-link" href="#about">About</a>
                             <a class="nav-link" href="#research">Research</a>
                         </div>
@@ -923,7 +1160,7 @@
                                         <li>Play a unique quiz to test your knowledge</li>
                                         <li>Display in Kannada, Sanskrit, Telugu, Odia, Malayalam, Tamil</li>
                                     </ul>
-                                    <div class="app-stats">â­ 4.4 rating â€¢ 10K+ downloads</div>
+                                    <div class="app-stats">Ã¢Â­Â 4.4 rating Ã¢â‚¬Â¢ 10K+ downloads</div>
                                     <div class="app-links">
                                         <a href="https://play.google.com/store/apps/details?id=com.varun.omvishnu.app" target="_blank" rel="noopener noreferrer">
                                             Google Play
@@ -953,7 +1190,7 @@
                                         <li>Display in Sanskrit, Kannada, or English</li>
                                         <li>Learning mode toggle for continuous listening</li>
                                     </ul>
-                                    <div class="app-stats">â­ 4.6 rating â€¢ 10K+ downloads</div>
+                                    <div class="app-stats">Ã¢Â­Â 4.6 rating Ã¢â‚¬Â¢ 10K+ downloads</div>
                                     <div class="app-links">
                                         <a href="https://play.google.com/store/apps/details?id=com.vtayur.Suktas" target="_blank" rel="noopener noreferrer">
                                             Google Play
@@ -980,7 +1217,7 @@
                                         <li>Meaning of each shloka with Phala Shruthi</li>
                                         <li>Includes Anu, Khila, and Laghu Vayu Stuthi</li>
                                     </ul>
-                                    <div class="app-stats">â­ 4.3 rating â€¢ 5K+ downloads</div>
+                                    <div class="app-stats">Ã¢Â­Â 4.3 rating Ã¢â‚¬Â¢ 5K+ downloads</div>
                                     <div class="app-links">
                                         <a href="https://play.google.com/store/apps/details?id=com.vtayur.sriharivayusthuthi" target="_blank" rel="noopener noreferrer">
                                             Google Play
@@ -1007,7 +1244,7 @@
                                         <li>Song sung by Mrs. Pooja M Tayur (classical singer)</li>
                                         <li>For those who don't know Sanskrit</li>
                                     </ul>
-                                    <div class="app-stats">â­ 4.6 rating â€¢ 1K+ downloads</div>
+                                    <div class="app-stats">Ã¢Â­Â 4.6 rating Ã¢â‚¬Â¢ 1K+ downloads</div>
                                     <div class="app-links">
                                         <a href="https://play.google.com/store/apps/details?id=com.vtayur.madhvanama" target="_blank" rel="noopener noreferrer">
                                             Google Play
@@ -1034,7 +1271,7 @@
                                         <li>Meaning and Phala Shruthi of each verse</li>
                                         <li>Learning mode for continuous listening</li>
                                     </ul>
-                                    <div class="app-stats">â­ 4.5 rating â€¢ 5K+ downloads</div>
+                                    <div class="app-stats">Ã¢Â­Â 4.5 rating Ã¢â‚¬Â¢ 5K+ downloads</div>
                                     <div class="app-links">
                                         <a href="https://play.google.com/store/apps/details?id=com.vtayur.dwadashastotra" target="_blank" rel="noopener noreferrer">
                                             Google Play
@@ -1115,7 +1352,7 @@
                         </div>
                         <div class="bio-text">
                             <h3>Varun Tayur, Ph.D.</h3>
-                            <p class="bio-tagline">Software Developer • Researcher • Mobile App Creator</p>
+                            <p class="bio-tagline">Software Developer â€¢ Researcher â€¢ Mobile App Creator</p>
                             <p class="bio-description">
                                 Passionate about creating meaningful software that bridges technology and spirituality. 
                                 With a Ph.D. in Computer Science focusing on IoT interoperability and machine learning, 
@@ -1273,55 +1510,163 @@
                 </div>
             </div>
         </div>
-        <div id="research">
-            <header>
-                <div class="container text-center">
-                    <h1>Research</h1>
+        
+        <!-- Research Section - Professional -->
+        <div id="research" class="research-section">
+            <div class="container">
+                <h2 class="section-title">Research & Publications</h2>
+                <p class="research-intro">
+                    My research focuses on Internet of Things (IoT) interoperability, ontology mapping, and machine learning applications. 
+                    I have published in peer-reviewed journals and IEEE conferences.
+                </p>
+                
+                <!-- Publication Stats -->
+                <div class="pub-stats">
+                    <div class="pub-stat-item">
+                        <i class="fas fa-book"></i>
+                        <span class="pub-stat-number">7</span>
+                        <span class="pub-stat-label">Publications</span>
+                    </div>
+                    <div class="pub-stat-item">
+                        <i class="fas fa-quote-left"></i>
+                        <span class="pub-stat-number">50+</span>
+                        <span class="pub-stat-label">Citations</span>
+                    </div>
+                    <div class="pub-stat-item">
+                        <i class="fas fa-award"></i>
+                        <span class="pub-stat-number">2</span>
+                        <span class="pub-stat-label">Indexed (SCIE/Scopus)</span>
+                    </div>
                 </div>
-            </header>
-
-            <br />
-
-            <ol>
-                <li>R. Billure, V. M. Tayur and Mahesh V, "Internet of Things - a study on the security challenges,"
-                    2015 IEEE International Advance Computing Conference (IACC), Banglore, India, 2015, pp. 247-252,
-                    doi: 10.1109/IADCC.2015.7154707. keywords: {Middleware;Security;Computers;Radiofrequency
-                    identification;Reliability;Jamming;Lead;Internet of Things;security in IOT},
-                    https://ieeexplore.ieee.org/abstract/document/7154707
+                
+                <!-- Publications List -->
+                <div class="publications-list">
+                    
+                    <!-- SCIE Journal -->
+                    <div class="publication-card featured js--fadeInLeft">
+                        <div class="pub-badge scie">SCIE Journal</div>
+                        <div class="pub-content">
+                            <h4>Multi-ontology mapping generative adversarial network in internet of things for ontology alignment</h4>
+                            <p class="pub-authors">Varun M Tayur, R Suchithra</p>
+                            <p class="pub-venue">Internet of Things, Volume 20, 2022, 100616</p>
+                            <div class="pub-meta">
+                                <span><i class="fas fa-calendar"></i> 2022</span>
+                                <span><i class="fas fa-link"></i> DOI: 10.1016/j.iot.2022.100616</span>
+                            </div>
+                            <a href="https://doi.org/10.1016/j.iot.2022.100616" target="_blank" rel="noopener noreferrer" class="pub-link">
+                                View Publication <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Book Chapter -->
+                    <div class="publication-card js--fadeInRight">
+                        <div class="pub-badge chapter">Book Chapter</div>
+                        <div class="pub-content">
+                            <h4>Chapter 6: Multi Ontology Mapping for Internet of Things</h4>
+                            <p class="pub-authors">V. M. Tayur and R. Suchithra</p>
+                            <p class="pub-venue">Prediction and Analysis for Knowledge Representation and Machine Learning (1st ed.). Chapman and Hall/CRC</p>
+                            <div class="pub-meta">
+                                <span><i class="fas fa-calendar"></i> 2022</span>
+                                <span><i class="fas fa-link"></i> DOI: 10.1201/9781003126898</span>
+                            </div>
+                            <a href="https://doi.org/10.1201/9781003126898" target="_blank" rel="noopener noreferrer" class="pub-link">
+                                View Publication <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Scopus Journal -->
+                    <div class="publication-card featured js--fadeInLeft">
+                        <div class="pub-badge scopus">Scopus Journal</div>
+                        <div class="pub-content">
+                            <h4>Modelling Context Awareness in Internet of Things with Business Process Model and Notation 2.0 extensions</h4>
+                            <p class="pub-authors">V. M. Tayur and R. Suchithra</p>
+                            <p class="pub-venue">International Journal of Advanced Intelligence Paradigms (IJAIP), Vol 20, Nos 3/4, pp 374-387</p>
+                            <div class="pub-meta">
+                                <span><i class="fas fa-calendar"></i> 2021</span>
+                                <span><i class="fas fa-link"></i> DOI: 10.1504/IJAIP.2021.119025</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- IEEE Conference -->
+                    <div class="publication-card js--fadeInRight">
+                        <div class="pub-badge ieee">IEEE Conference</div>
+                        <div class="pub-content">
+                            <h4>A Comprehensive Ontology for Internet of Things (COIoT)</h4>
+                            <p class="pub-authors">V. M. Tayur and R. Suchithra</p>
+                            <p class="pub-venue">2019 Second International Conference on Advanced Computational and Communication Paradigms (ICACCP), Gangtok, India, pp. 1-6</p>
+                            <div class="pub-meta">
+                                <span><i class="fas fa-calendar"></i> 2019</span>
+                                <span><i class="fas fa-link"></i> DOI: 10.1109/ICACCP.2019.8882936</span>
+                            </div>
+                            <a href="https://ieeexplore.ieee.org/document/8882936" target="_blank" rel="noopener noreferrer" class="pub-link">
+                                View on IEEE <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- IEEE Conference -->
+                    <div class="publication-card js--fadeInLeft">
+                        <div class="pub-badge ieee">IEEE Conference</div>
+                        <div class="pub-content">
+                            <h4>Review of interoperability approaches in application layer of Internet of Things</h4>
+                            <p class="pub-authors">V. M. Tayur and R. Suchithra</p>
+                            <p class="pub-venue">2017 IEEE International Conference on Innovative Mechanisms for Industry Applications (ICIMIA), Bengaluru, India, pp. 322-326</p>
+                            <div class="pub-meta">
+                                <span><i class="fas fa-calendar"></i> 2017</span>
+                                <span><i class="fas fa-link"></i> DOI: 10.1109/ICIMIA.2017.7975628</span>
+                            </div>
+                            <a href="https://ieeexplore.ieee.org/document/7975628" target="_blank" rel="noopener noreferrer" class="pub-link">
+                                View on IEEE <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- IJERT -->
+                    <div class="publication-card js--fadeInRight">
+                        <div class="pub-badge journal">Journal</div>
+                        <div class="pub-content">
+                            <h4>Smart Healthcare: A Review of Architectures</h4>
+                            <p class="pub-authors">Varun M Tayur, Dr. Suchithra R</p>
+                            <p class="pub-venue">International Journal of Engineering Research and Technology (IJERT) ICRET 2016, Volume 4, Issue 21</p>
+                            <div class="pub-meta">
+                                <span><i class="fas fa-calendar"></i> 2016</span>
+                            </div>
+                            <a href="https://www.ijert.org/smart-healthcare-a-review-of-architectures" target="_blank" rel="noopener noreferrer" class="pub-link">
+                                View Publication <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- IEEE Conference -->
+                    <div class="publication-card js--fadeInLeft">
+                        <div class="pub-badge ieee">IEEE Conference</div>
+                        <div class="pub-content">
+                            <h4>Internet of Things - a study on the security challenges</h4>
+                            <p class="pub-authors">R. Billure, V. M. Tayur and Mahesh V</p>
+                            <p class="pub-venue">2015 IEEE International Advance Computing Conference (IACC), Bangalore, India, pp. 247-252</p>
+                            <div class="pub-meta">
+                                <span><i class="fas fa-calendar"></i> 2015</span>
+                                <span><i class="fas fa-link"></i> DOI: 10.1109/IADCC.2015.7154707</span>
+                            </div>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/7154707" target="_blank" rel="noopener noreferrer" class="pub-link">
+                                View on IEEE <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Google Scholar Link -->
+                <div class="scholar-link-container">
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=nLbklpYAAAAJ" target="_blank" rel="noopener noreferrer" class="scholar-btn">
+                        <i class="fas fa-graduation-cap"></i> View All on Google Scholar
                     </a>
-                </li>
-                <li>V. M. Tayur and R. Suchithra, â€Modelling Context Awareness in Internet of Things with Business
-                    Process Model and Notation 2.0 extensionsâ€ in the International Journal of Advanced Intelligence
-                    Paradigms (IJAIP) , Vol 20, Nos 3/4, 2021, pp 374-387. DOI: 10.1504/IJAIP.2021.119025 (Scopus
-                    Journal)</li>
-                <li>Varun M Tayur, R Suchithra, Multi-ontology mapping generative adversarial network in internet of
-                    things for ontology alignment, Internet of Things, Volume 20, 2022, 100616, ISSN 2542-6605,
-                    https://doi.org/10.1016/j.iot.2022.100616. (SCIE Journal)</li>
-                <li>V. M. Tayur and R. Suchithra. (2022). Chapter 6: Multi Ontology Mapping for Internet of Things.
-                    Kumar, A., Sagar, S., Kumar, T.G., and Sampath Kumar, K. (2022). Prediction and Analysis for
-                    Knowledge Representation and Machine Learning: Prediction and Analysis for Knowledge Representation
-                    and Machine Learning (1st ed.). Chapman and Hall/CRC. Available online:
-                    https://doi.org/10.1201/9781003126898.</li>
-                <li>V. M. Tayur and R. Suchithra, â€A Comprehensive Ontology for Internet of Things (COIoT)â€, 2019
-                    Second International Conference on Advanced Computational and Communication Paradigms (ICACCP),
-                    Gangtok, India, 2019, pp. 1-6. doi: 10.1109/ICACCP.2019.8882936. Available online:
-                    https://ieeexplore.ieee.org/document/8882936</li>
-                <li>V. M. Tayur and R. Suchithra, â€Review of interoperability approaches in application layer of
-                    Internet of Things,â€ 2017 , IEEE International Conference on Innovative Mechanisms for Industry
-                    Applications (ICIMIA), Bengaluru, India, 2017, pp. 322-326. doi: 10.1109/ICIMIA.2017.7975628.
-                    Available online: https://ieeexplore.ieee.org/document/7975628</li>
-                <li>Varun M Tayur, Dr. Suchithra R, 2016, Smart Healthcare: A Review of Architectures, INTERNATIONAL
-                    JOURNAL OF ENGINEERING RESEARCH and TECHNOLOGY (IJERT) ICRET â€“ 2016 (Volume 4 â€“ Issue
-                    21). Available online: https://www.ijert.org/smart-healthcare-a-review-of-architectures</li>
-            </ol>
-
-            <a target="_blank" rel="noopener noreferrer"
-                href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=nLbklpYAAAAJ">
-                Google Scholar
-            </a>
-
-
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 
     <script>
