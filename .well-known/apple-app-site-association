@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAMID.com.vtayur.madhvanama",
+        "paths": ["/madhvanama/shloka/*"]
+      },
+      {
+        "appID": "TEAMID.com.vtayur.dwadashastotra",
+        "paths": ["/dwadasha/stotra/*"]
+      }
+    ]
+  }
+}

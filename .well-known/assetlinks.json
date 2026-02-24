@@ -5,4 +5,12 @@
     "package_name": "com.vtayur.dwadashastotra",
     "sha256_cert_fingerprints": ["BC:92:DE:F9:13:BD:50:23:C4:7C:80:DC:1C:44:DB:E6:A3:71:3D:44:EC:AB:EA:93:F4:F6:DE:41:14:98:E3:6D"]
   }
+},
+{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.vtayur.madhvanama",
+    "sha256_cert_fingerprints": ["BC:92:DE:F9:13:BD:50:23:C4:7C:80:DC:1C:44:DB:E6:A3:71:3D:44:EC:AB:EA:93:F4:F6:DE:41:14:98:E3:6D"]
+  }
 }]
