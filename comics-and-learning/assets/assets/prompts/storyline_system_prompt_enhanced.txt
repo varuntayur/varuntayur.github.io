@@ -376,7 +376,7 @@ Before closing the JSON, verify:
 				"properties": {
 					"id": {
 						"type": "string",
-						"description": "give an identifier for the character. this is useful to refer to in the panels and base-panels."
+						"description": "Unique identifier for the character. Use the character's first name in lowercase with underscores for spaces. Do NOT add any prefix like 'char_' or 'character_'. E.g., 'varun', 'kunal', 'father', 'dark_knight'. This ID is used as the storage key for the generated image and must be referenced consistently in panels and base_panels."
 					},
 					"name": {
 						"type": "string",
@@ -391,8 +391,12 @@ Before closing the JSON, verify:
 		},
 		"environment": {
 			"type": "object",
-			"required": ["title", "description"],
+			"required": ["id", "title", "description"],
 			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier for the environment. Use lowercase with underscores, descriptive of the location, e.g., 'ancient_temple', 'dark_forest', 'city_rooftop'. Do NOT add any prefix like 'env_' or 'environment_'. This ID is used as the storage key for the generated image."
+				},
 				"title": {
 					"type": "string",
 					"description": "Short title for the environment"
@@ -422,6 +426,7 @@ Before closing the JSON, verify:
 							"type": "object",
                             "description": "CRITICAL: Each panel MUST reference at least one event ID in its event_refs array. The model MUST create at least one panel for EVERY SINGLE event listed in: required_introduction_events, required_rising_action_events, required_climax_events, required_falling_action_events, and required_resolution_events. Complex events may be split into multiple panels. NO EVENT CAN BE SKIPPED.",
 							"required": [
+								"id",
 								"panel_number",
 								"edit_prompt",
 								"characters",
@@ -430,6 +435,10 @@ Before closing the JSON, verify:
 								"dialogue"
 							],
 							"properties": {
+								"id": {
+									"type": "string",
+									"description": "Unique identifier for this panel. Format: page{page_number}_panel{panel_number}, e.g., 'page1_panel1', 'page3_panel4'. This ID is used as the storage key for the generated image."
+								},
 								"panel_number": {
 									"type": "integer",
 									"minimum": 1
@@ -466,7 +475,7 @@ Before closing the JSON, verify:
 								},
 								"base_panel_ref": {
 									"type": "string",
-									"description": "Include a reference by way of an ID to refer to the appropriate base-panel to use"
+									"description": "Reference to the base_panel_ref of the base panel to use for this panel. Must exactly match one of the base_panel_ref values defined in the base_panels array."
 								},
                                 "event_refs": {
                                     "type": "array",
@@ -495,7 +504,7 @@ Before closing the JSON, verify:
 				"properties": {
 					"base_panel_ref": {
 						"type": "string",
-						"description": "unique identifier that is used by the panels to refer to this base-panel so that we use this as the baseline for image editing"
+						"description": "Unique identifier for this base panel. Use lowercase with underscores, descriptive of the scene composition, e.g., 'varun_kunal_office', 'father_garden', 'all_characters_temple'. Do NOT add any prefix like 'bp_' or 'base_'. This ID is used as the storage key for the generated image and is referenced by panels via their base_panel_ref field."
 					},
 					"base_panel_prompt": {
 						"type": "string",
